@@ -1,0 +1,10 @@
+ErrorDocument 404 http://klondikeitblogger.ga/404.php
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType application/javascript "access plus 1 years"
+ExpiresByType text/javascript "access plus 1 years"
+ExpiresByType text/css "access plus 1 years"
+ExpiresByType image/gif "access plus 1 years"
+ExpiresByType image/jpeg "access plus 1 years"
+ExpiresByType image/png "access plus 1 years"
+</IfModule>
