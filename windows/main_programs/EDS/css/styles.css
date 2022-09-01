@@ -1,0 +1,358 @@
+body {
+  background-color: #080808;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 15px;
+  opacity: 0;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d0d0d;
+}
+h4{
+  color: #fff;
+}
+::-webkit-scrollbar-thumb {
+  background: #323232;
+}
+
+::-moz-selection {
+  background: rgb(235, 235, 235);
+  color: rgb(15, 15, 15);
+}
+
+::selection {
+  background: rgb(235, 235, 235);
+  color: rgb(15, 15, 15);
+}
+
+::-moz-selection {
+  background: rgb(235, 235, 235);
+  color: rgb(15, 15, 15);
+}
+
+::-webkit-selection {
+  background: rgb(235, 235, 235);
+  color: rgb(15, 15, 15);
+}
+.it-personality {
+  color: #ff0000;
+  margin-left: 218px;
+  display: flex;
+  transition: 0.5s;
+  margin-top: -19px;
+}
+.it-personality:hover {
+  color: #0fffcf;
+  text-decoration: auto;
+}
+.share_h6{
+  color: #fff;
+  display: flex;
+  padding-right: 17px;
+  font-size: larger;
+  align-items: center;
+}
+.soch {
+  margin-left: 7%;
+  display: flex;
+  margin-top: 70px;
+  margin-bottom: 1%;
+}
+.menu__box {
+  float: right;
+  margin-right: 55px;
+}
+
+.menu__box {
+  list-style: none;
+}
+
+.menu__box {
+  display: flex;
+  margin-top: 18px;
+}
+
+.menu__box a {
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  margin-left: 29px;
+  font-weight: 500;
+  text-decoration: auto;
+  padding: 10px 5px;
+}
+
+.menu__box a:hover {
+  color: #0fffcf;
+}
+.site-logo img {
+  width: 16%;
+  margin-top: 15px;
+  margin-left: 7%;
+}
+#menu__toggle {
+  opacity: 0;
+}
+.DriverTest {
+  display: flex;
+}
+.DriverTest img {
+  width: 150px;
+  margin-left: 62px;
+  margin-top: 77px;
+}
+.iobith1 h1 {
+  color: #fff;
+  margin-left: 19%;
+  margin-top: -98px;
+}
+#text21 {
+  color: #b3b3b3;
+  font-weight: 600;
+  margin-top: 1%;
+  padding-right: 28%;
+}
+.Driv1 img {
+  width: 35%;
+  margin-left: 74%;
+  margin-top: -60%;
+}
+.vozv h1 {
+  color: #fff;
+  font-size: xx-large;
+}
+.osob li {
+  color: #dfdfdf;
+}
+#ifandonwlod {
+  position: absolute;
+  background-color: #181e23;
+  border-radius: 5px;
+  padding: 9px;
+  color: #d1d1d1;
+  text-align: center;
+  outline: none;
+  width: 21%;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-decoration: auto;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 13%;
+  margin-top: 1%;
+}
+#ifandonwlod:hover {
+  background: rgba(0, 0, 0, 0);
+  color: #ff0000;
+  box-shadow: inset 0 0 0 2px #ff0000;
+}
+.footer-menu li a {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #aeaeae;
+  text-decoration: auto;
+  margin-left: 20px;
+}
+.footer-section h6 {
+  margin-top: -33px;
+  color: #fff;
+  margin-left: 6%;
+  margin-bottom: 17px;
+}
+.footer-section {
+  padding: 17px 0 5px;
+  overflow: hidden;
+  background: #121212;
+  margin-top: 8%;
+}
+.footer-menu {
+  margin-left: 43%;
+}
+
+.footer-menu li {
+  display: inline;
+}
+@media screen and (max-width: 600px) {
+  .site-logo img {
+    width: 54%;
+    margin-top: 14px;
+    margin-left: 0%;
+  }
+
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 328px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #ffdd00;
+  }
+  .menu__btn > span::before {
+    content: "";
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: "";
+    top: 8px;
+  }
+  .menu__box {
+    display: grid;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 53%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #0e0e0e;
+    box-shadow: 1px 0px 6px rgb(0 0 0 / 20%);
+  }
+  .menu__box a {
+    display: inline-block;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;
+    text-decoration: auto;
+    padding: 11px 0px;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    transition-duration: 0.25s;
+  }
+  .share_h6 {
+    color: #fff;
+    display: flex;
+    padding-right: 0px;
+    justify-content: center;
+    font-size: larger;
+}
+.soch {
+    margin-left: 2%;
+    display: block;
+    margin-top: 45px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+  .menu__box {
+    transition-duration: 0.25s;
+  }
+  .DriverTest img {
+    width: 51%;
+    justify-content: center;
+    margin-top: 13%;
+    margin-left: 28%;
+    margin-right: auto;
+  }
+  .iobith1 h1 {
+    color: #fff;
+    justify-content: center;
+    margin-left: 43%;
+    margin-top: -3px;
+  }
+  #text21 {
+    color: #b3b3b3;
+    font-weight: 600;
+    margin-left: 0%;
+    margin-top: 0%;
+    text-align: center;
+    justify-content: center;
+    padding-right: 0%;
+  }
+  .vozv h1 {
+    color: #fff;
+    font-size: xx-large;
+    margin-left: 1%;
+    justify-content: center;
+  }
+  .osob li {
+    color: #dfdfdf;
+    margin-left: 1%;
+  }
+  #ifandonwlod {
+    position: absolute;
+    background-color: #181e23;
+    border-radius: 5px;
+    padding: 9px;
+    justify-content: center;
+    color: #d1d1d1;
+    text-align: center;
+    outline: none;
+    width: 70%;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-decoration: auto;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 15%;
+    margin-top: 4%;
+  }
+  .Driv1 img {
+    width: 89%;
+    margin-left: 5%;
+    justify-content: center;
+    margin-top: 21%;
+  }
+  .footer-section h6 {
+    display: flex;
+    margin-top: -8px;
+    color: #fff;
+    margin-left: 0%;
+    justify-content: center;
+  }
+  .it-personality {
+    color: #ff0000;
+    margin-left: 3px;
+    display: flex;
+    transition: 0.5s;
+    margin-top: 0px;
+  }
+  .footer-menu li a {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    color: #aeaeae;
+    margin-left: 20px;
+  }
+  .footer-menu {
+    margin-left: -2%;
+    justify-content: center;
+  }
+}
