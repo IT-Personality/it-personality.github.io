@@ -1,0 +1,381 @@
+body {
+  background-color: #080808;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 1176px;
+}
+::-moz-selection {
+  background: rgb(235, 235, 235);
+  color: rgb(15, 15, 15);
+}
+
+::selection {
+  background: rgb(235, 235, 235);
+  color: rgb(15, 15, 15);
+}
+
+::-moz-selection {
+  background: rgb(235, 235, 235);
+  color: rgb(15, 15, 15);
+}
+
+::-webkit-selection {
+  background: rgb(235, 235, 235);
+  color: rgb(15, 15, 15);
+}
+::-webkit-scrollbar {
+  width: 15px;
+  opacity: 0;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d0d0d;
+}
+h4{
+  color: #fff;
+}
+::-webkit-scrollbar-thumb {
+  background: #323232;
+}
+.it-personality {
+  color: #ff0000;
+  margin-left: 218px;
+  display: flex;
+  transition: 0.5s;
+  margin-top: -19px;
+}
+.it-personality:hover {
+  color: #0fffcf;
+  text-decoration: auto;
+}
+.share_h6{
+  color: #fff;
+  display: flex;
+  padding-right: 17px;
+  font-size: larger;
+  align-items: center;
+}
+.soch {
+  margin-left: 7%;
+  display: flex;
+  margin-top: 70px;
+  margin-bottom: 1%;
+}
+.container_img {
+  max-width: 1176px;
+  padding-right: 50%;
+  padding-left: 50%;
+}
+.DriverTest b {
+  margin-left: -104px;
+  font-size: xx-large;
+  word-break: initial;
+  color: #fff;
+}
+.DriverTest {
+  display: inline-block;
+  margin-bottom: 6vh;
+}
+.site-logo img {
+  width: 16%;
+  margin-top: 15px;
+  margin-left: 7%;
+}
+.menu__box {
+  float: right;
+  margin-right: 60px;
+}
+#show {
+  position: absolute;
+  background-color: #181e23;
+  border-radius: 5px;
+  padding: 9px;
+  color: #d1d1d1;
+  text-align: center;
+  outline: none;
+  width: 22%;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-decoration: auto;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 0%;
+  margin-top: 1%;
+}
+#show:hover {
+  background: rgba(0, 0, 0, 0);
+  color: #ff0000;
+  box-shadow: inset 0 0 0 2px #ff0000;
+}
+.menu__box {
+  list-style: none;
+}
+
+.menu__box {
+  display: flex;
+  margin-top: 18px;
+}
+#menu__toggle {
+  opacity: 0;
+}
+.menu__box a {
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  margin-left: 29px;
+  font-weight: 500;
+  text-decoration: auto;
+  padding: 10px 5px;
+}
+
+.menu__box a:hover {
+  color: #0fffcf;
+}
+.Driv1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 6vh;
+}
+.Driver2 img {
+  width: 42%;
+  margin-left: 65%;
+  margin-top: -65%;
+}
+.Driver3 img {
+  width: 42%;
+  margin-left: 65%;
+  margin-top: -20%;
+}
+#text21 {
+  color: #9f9f9f;
+  padding-right: 36%;
+  font-weight: 500;
+  margin-top: 0%;
+}
+.osob h1 {
+  color: #fff;
+  font-size: revert;
+}
+.osob li {
+  color: #d7d7d7;
+}
+.footer-menu li a {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #aeaeae;
+  text-decoration: auto;
+  margin-left: 20px;
+}
+.footer-section h6 {
+  margin-top: -33px;
+  color: #fff;
+  margin-left: 6%;
+  margin-bottom: 17px;
+}
+.footer-section {
+  padding: 17px 0 5px;
+  overflow: hidden;
+  background: #121212;
+  margin-top: 4%;
+}
+.footer-menu {
+  margin-left: 43%;
+}
+
+.footer-menu li {
+  display: inline;
+  text-decoration: auto;
+}
+@media screen and (max-width: 600px) {
+  .site-logo img {
+    width: 43%;
+    margin-top: 13px;
+    margin-left: 1%;
+  }
+  .hamburger-menu {
+    position: fixed;
+    background: rgb(0 0 0 / 90%);
+    z-index: 4;
+    width: 100%;
+    height: 10%;
+    padding: 3px 0;
+  }
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 328px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #ffdd00;
+  }
+  .menu__btn > span::before {
+    content: "";
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: "";
+    top: 8px;
+  }
+  .menu__box {
+    display: grid;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 53%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #0e0e0e;
+    box-shadow: 1px 0px 6px rgb(0 0 0 / 20%);
+  }
+  .menu__box a {
+    display: inline-block;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;
+    text-decoration: auto;
+    padding: 11px 0px;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    transition-duration: 0.25s;
+  }
+  .menu__box {
+    transition-duration: 0.25s;
+  }
+  .share_h6 {
+    color: #fff;
+    display: flex;
+    padding-right: 0px;
+    justify-content: center;
+    font-size: larger;
+}
+.soch {
+    margin-left: 2%;
+    display: block;
+    margin-top: 45px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+  .Driv1 {
+    display: flex;
+    justify-content: center;
+    margin-left: 3px;
+    margin-top: 0vh;
+  }
+  .Driv1 img {
+    margin-top: 12vh;
+  }
+  .DriverTest b {
+    margin-left: -88%;
+    font-size: xx-large;
+    word-break: initial;
+    color: #fff;
+  }
+  #text21 {
+    color: #9f9f9f;
+    padding-right: 0%;
+    text-align: center;
+    font-weight: 500;
+  }
+  .Driver2 img {
+    width: 100%;
+    margin-left: 1%;
+    margin-top: 19%;
+  }
+  #show {
+    background-color: #181e23;
+    border-radius: 5px;
+    padding: 9px;
+    color: #d1d1d1;
+    text-align: center;
+    outline: none;
+    width: 65%;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-decoration: auto;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 5%;
+    margin-top: 1%;
+  }
+  .content_show {
+    display: flex;
+    justify-content: center;
+  }
+  .Driver3 img {
+    width: 100%;
+    margin-left: 1%;
+    margin-top: 2%;
+  }
+  .footer-section {
+    padding: 17px 0 5px;
+    overflow: hidden;
+    background: #121212;
+    margin-top: 8%;
+  }
+  .footer-section h6 {
+    display: flex;
+    margin-top: -8px;
+    color: #fff;
+    margin-left: 0%;
+    justify-content: center;
+  }
+  .it-personality {
+    color: #ff0000;
+    margin-left: 3px;
+    display: flex;
+    transition: 0.5s;
+    margin-top: 0px;
+  }
+  .footer-menu {
+    margin-left: 3%;
+  }
+  .footer-menu li a {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #aeaeae;
+    text-decoration: auto;
+    margin-left: 12px;
+    margin-bottom: 1%;
+  }
+}
