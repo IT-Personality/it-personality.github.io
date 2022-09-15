@@ -1,0 +1,415 @@
+body {
+  background-color: #080808;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 15px;
+  opacity: 0;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d0d0d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #323232;
+}
+h4{
+  color: #fff;
+}
+::-moz-selection {
+  background: rgb(235, 235, 235);
+  color: rgb(15, 15, 15);
+}
+
+::selection {
+  background: rgb(235, 235, 235);
+  color: rgb(15, 15, 15);
+}
+
+::-moz-selection {
+  background: rgb(235, 235, 235);
+  color: rgb(15, 15, 15);
+}
+
+::-webkit-selection {
+  background: rgb(235, 235, 235);
+  color: rgb(15, 15, 15);
+}
+.share_h6{
+  color: #fff;
+  display: flex;
+  padding-right: 17px;
+  font-size: larger;
+  align-items: center;
+}
+.soch {
+  margin-left: 7%;
+  display: flex;
+  margin-top: 70px;
+  margin-bottom: 1%;
+}
+.container {
+  max-width: 1176px;
+}
+.container_img {
+  max-width: 1176px;
+  padding-right: 50%;
+  padding-left: 50%;
+}
+.DriverTest b {
+  margin-left: -129px;
+  font-size: xx-large;
+  word-break: initial;
+  color: #fff;
+}
+.DriverTest {
+  display: inline-block;
+}
+.site-logo img {
+  width: 16%;
+  margin-top: 15px;
+  margin-left: 7%;
+}
+.menu__box {
+  float: right;
+  margin-right: 60px;
+}
+#show {
+  position: absolute;
+  background-color: #181e23;
+  border-radius: 5px;
+  padding: 9px;
+  color: #d1d1d1;
+  text-align: center;
+  outline: none;
+  width: 22%;
+  font-size: 22px;
+  text-transform: uppercase;
+  text-decoration: auto;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 0%;
+  margin-top: 1%;
+}
+#show:hover {
+  background: rgba(0, 0, 0, 0);
+  color: #ff0000;
+  box-shadow: inset 0 0 0 2px #ff0000;
+}
+.menu__box {
+  list-style: none;
+}
+
+.menu__box {
+  display: flex;
+  margin-top: 18px;
+}
+#menu__toggle {
+  opacity: 0;
+}
+.menu__box a {
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  margin-left: 29px;
+  font-weight: 500;
+  text-decoration: auto;
+  padding: 10px 5px;
+}
+
+.menu__box a:hover {
+  color: #0fffcf;
+}
+.Driv1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 6vh;
+}
+.Driver2 img {
+  width: 30%;
+  margin-left: 65%;
+  margin-top: -121%;
+}
+.Driver3 img {
+  width: 30%;
+  margin-left: 65%;
+  margin-top: -80%;
+}
+.Driver4 img {
+  width: 30%;
+  margin-left: 65%;
+  margin-top: -39%;
+}
+#text21 {
+  color: #9f9f9f;
+  padding-right: 36%;
+  font-weight: 500;
+  margin-top: 1%;
+}
+.osob h1 {
+  color: #fff;
+  font-size: revert;
+}
+.osob li {
+  color: #d7d7d7;
+  padding-right: 30%;
+}
+.it-personality {
+  color: #ff0000;
+  margin-left: 4px;
+  display: flex;
+  transition: 0.5s;
+}
+.it-personality:hover {
+  color: #0fffcf;
+  text-decoration: auto;
+}
+.email {
+  color: #25ffd3;
+  justify-content: center;
+  display: flex;
+  font-size: 120%;
+  margin-top: 15px;
+}
+.footer-section h6 {
+  display: flex;
+  color: #fff;
+  margin-top: 3px;
+  padding-right: 100px;
+}
+.footer-section {
+  overflow: hidden;
+  background: #101010;
+  margin-top: 5%;
+}
+.footer-menu li a {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #aeaeae;
+  margin-left: 20px;
+}
+.footer-menu li a:hover {
+  color: #0fffcf;
+  transition: 0.5s;
+  text-decoration: auto;
+}
+.footer-menu li {
+  display: inline;
+}
+.footer-menu {
+  display: flex;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+@media screen and (max-width: 600px) {
+  .site-logo img {
+    width: 43%;
+    margin-top: 13px;
+    margin-left: 1%;
+  }
+  .osob li {
+    color: #d7d7d7;
+    padding-right: 0%;
+  }
+  .hamburger-menu {
+    position: fixed;
+    background: rgb(0 0 0 / 90%);
+    z-index: 4;
+    width: 100%;
+    height: 10%;
+    padding: 3px 0;
+  }
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 328px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #0fffcf;
+  }
+  .menu__btn > span::before {
+    content: "";
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: "";
+    top: 8px;
+  }
+  .menu__box {
+    display: grid;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 53%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #0e0e0e;
+    box-shadow: 1px 0px 6px rgb(0 0 0 / 20%);
+  }
+  .menu__box a {
+    display: inline-block;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;
+    text-decoration: auto;
+    padding: 11px 0px;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    transition-duration: 0.25s;
+  }
+  .menu__box {
+    transition-duration: 0.25s;
+  }
+  .share_h6 {
+    color: #fff;
+    display: flex;
+    padding-right: 0px;
+    justify-content: center;
+    font-size: larger;
+}
+.soch {
+    margin-left: 2%;
+    display: block;
+    margin-top: 45px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+  .Driv1 {
+    display: flex;
+    justify-content: center;
+    margin-left: 3px;
+    margin-top: 0vh;
+  }
+  .Driv1 img {
+    margin-top: 12vh;
+    margin-left: 2vh;
+  }
+  .DriverTest b {
+    margin-left: -72%;
+    font-size: xx-large;
+    word-break: initial;
+    color: #fff;
+  }
+  #text21 {
+    color: #9f9f9f;
+    padding-right: 0%;
+    text-align: center;
+    margin-top: 2%;
+    font-weight: 500;
+  }
+  .Driver2 img {
+    width: 100%;
+    margin-left: -1%;
+    margin-top: 19%;
+  }
+  .Driver4 img {
+    width: 100%;
+    margin-left: -1%;
+    margin-top: 1%;
+  }
+  #show {
+    background-color: #181e23;
+    border-radius: 5px;
+    padding: 9px;
+    color: #d1d1d1;
+    text-align: center;
+    outline: none;
+    width: 65%;
+    font-size: 22px;
+    text-transform: uppercase;
+    text-decoration: auto;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 14%;
+    margin-top: 1%;
+  }
+  .Driver3 img {
+    width: 100%;
+    margin-left: -1%;
+    margin-top: 2%;
+  }
+  .email {
+    color: #25ffd3;
+    justify-content: center;
+    display: flex;
+    font-size: 120%;
+    margin-top: 10px;
+  }
+  .footer-section {
+  overflow: hidden;
+  background: #121212;
+  margin-top: 8%;
+  padding: 17px;
+  }
+  .footer-section h6 {
+  color: #fff;
+  font-size: initial;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  padding-right: 0px;
+  margin-top: 9%;
+  margin-bottom: 5%;
+  }
+  .footer-menu {
+  margin-bottom: 4%;
+  text-align: center;
+  display: block;
+  margin-left: -16%;
+  }
+  .footer-menu li a {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #aeaeae;
+  margin-top: 14px;
+  margin-left: 20px;
+  }
+    .it-personality {
+      color: #ff0000;
+      margin-left: 3px;
+      display: flex;
+      transition: 0.5s;
+      margin-top: 0px;
+    }
+}
