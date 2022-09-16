@@ -1,0 +1,38 @@
+html{
+    overflow-x: hidden;
+}
+@media screen and (max-width: 600px){
+    .menu__btn {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 20px;
+        margin-left: 86%;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .music h2 {
+        margin-top: 13%;
+        color: #e7e7e7;
+        font-weight: 600;
+        text-align: center;
+    }
+    .music ::before {
+        content: "";
+        position: absolute;
+        left: 18px;
+        width: 90%;
+        margin-top: 125px;
+        height: 3px;
+        display: none;
+        background: -o-linear-gradient(left,#ff8a00,#da1b60);
+        background: linear-gradient(to right,#ff0000,#ff5900);
+    }
+    .contents-1 {
+        margin-left: 38px;
+        margin-top: 13%;
+        display: block;
+    }
+}
