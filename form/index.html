@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="keywords"
+    content="платежная система, прием платежей, прием платежей на сайте, прием интернет платежей, прием платежей онлайн, платежные решения, онлайн платежи, платежи в интернет магазине, электронные платежи, интернет эквайринг, подключить онлайн платежи, оплата через интернет, оплата на сайте, платежи в интернете, pos терминал, сервисы для интернет-магазина, яндекс касса, прием платежей через яндекс, яндекс касса сайт, касса яндекс деньги, интернет магазин яндекс, платежные системы оплаты, киви кошелек, прием киви, ishop qiwi, прием карт, прием вебмани, webmoney">
+
+  <meta name="viewport" content="width=device-width">
+  <title>Freekassa - оплата</title>
+  <link rel="stylesheet" href="css/m1.css" />
+</head>
+
+<body class="payment-page__container">
+  <div id="menu-navigation"></div>
+  <div id="notifications"></div>
+  <div id="__next">
+    <div class="sc-bxivhb QXpvx">
+      <div></div>
+    </div>
+    <div id="pay-global" class="sc-hRmvpr cVIgGW cLEvZN payment-page-global__wrap payment-page-global__wrap-styled">
+      <div class="sc-gkFcWv sc-cJOK dXKqeh ekoddX payment-page__wrap">
+        <div class="sc-fnwBNb sc-hUfwpO bRYYdr payment-page__form">
+          <div class="sc-cugefK sc-imABML jRNTTD">
+            <div class="payment-page__top-info">
+              <div style="display: block;">
+                <div style="display: inline-block; float: left;"><span
+                    class="sc-kQsIoO kpXTxY">https://bestshopvk.pro/</span><br><a target="_blank"
+                    href="http://bestshopvk.pro/" title="bestshopvk.pro" class="sc-cpmKsF kRuCUy">bestshopvk.pro</a>
+                </div>
+                <p style="display: inline-block; float: right;"><img
+                    src="data:image/png;base64,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"
+                    alt="logo" class="sc-eXNvrr fUSjOi"></p>
+              </div>
+            </div>
+            <div class="sc-bdVaJa iLiJrO undefined h-box" type="double"></div>
+            <div class="sc-fEUNkw kmZVJa payment-page__sum"><span class="sc-cjHlYL bYBEXf">1 347,5</span>
+              <div class="sc-kgoBCf gvWwQT sc-dRaagA VAvrJ" scale="scale(1.65)"><svg transform="scale(1.65)" width="13"
+                  height="20" preserveAspectRatio="xMidYMid meet">
+                  <path fill="#232323"
+                    d="M2.14636 18V14.736H0.0583594V13.176H2.14636V11.04H0.0583594V9.216H2.14636V0.863999H6.65836C8.75436 0.863999 10.3064 1.288 11.3144 2.136C12.3384 2.984 12.8504 4.216 12.8504 5.832C12.8504 7.464 12.2984 8.744 11.1944 9.672C10.0904 10.584 8.46636 11.04 6.32236 11.04H4.30636V13.176H8.26636V14.736H4.30636V18H2.14636ZM4.30636 9.216H6.01036C7.46636 9.216 8.59436 8.976 9.39436 8.496C10.2104 8.016 10.6184 7.152 10.6184 5.904C10.6184 4.816 10.2824 4.008 9.61036 3.48C8.93836 2.952 7.89036 2.688 6.46636 2.688H4.30636V9.216Z">
+                  </path>
+                </svg></div>
+            </div>
+            <div class="sc-kcbnda eyUlQl payment-page__description">24387985</div>
+            <div class="sc-iFMziU hqfHsI payment-page__choose-payment">
+              <div class="sc-iAyFgw sc-dvCyap dePTnl">
+                <div class="sc-kEYyzF sc-eTpRJs gsjvGP">
+                  <div class="sc-gzVnrw sc-iomxrj hQYUvt">Выберите способ оплаты</div>
+                  <div class="sc-cEvuZC hzRaaG payment-page__currency-list-mobile">
+                    
+                    <div id="currency-1" class="sc-gPzReC">
+                      <div class="sc-hjRWVT rt5" style="display: flex; align-items: center;">
+                        <p style="display: initial;">FKWallet RUB</p><img style="margin-left: 364px;
+                        position: absolute;"
+                          src="https://cdn.freekassa.ru/images/currencies/light_small_logo_1.png" alt="logo">
+                      </div>
+                    </div>
+
+                    <div id="currency-2" class="sc-gPzReC">
+                      <div class="sc-hjRWVT rt5" style="display: flex; align-items: center;">
+                        <p style="display: initial;">FKWallet USD</p><img style="margin-left: 364px;
+                        position: absolute;"
+                          src="https://cdn.freekassa.ru/images/currencies/light_small_logo_2.png" alt="logo">
+                      </div>
+                    </div>
+
+                    <div id="currency-10" class="sc-gPzReC ">
+                      <div class="sc-qiwi" style=" display: flex; align-items: center;">
+                        <p style="display: initial;">QIWI</p><img style="margin-left: 336px;"
+                          src="https://cdn.freekassa.ru/images/currencies/light_small_logo_10.png" alt="logo">
+                      </div>
+                    </div>
+                    <div id="currency-3" class="sc-gPzReC">
+                      <div class="sc-hjRWVT rt5" style="display: flex; align-items: center;">
+                        <p style="display: initial;">ЮMoney</p><img style="margin-left: 364px;
+                        position: absolute;"
+                          src="https://cdn.freekassa.ru/images/currencies/light_small_logo_6.png" alt="logo">
+                      </div>
+                    </div>
+                    <div id="currency-4" class="sc-gPzReC">
+                      <div class="sc-hjRWVT rt5" style="display: flex; align-items: center;">
+                        <p style="display: initial;">VISA RUB</p><img style="margin-left: 364px;
+                        position: absolute;"
+                          src="https://cdn.freekassa.ru/images/currencies/light_small_logo_4.png" alt="logo">
+                      </div>
+                    </div>
+                    <div id="currency-5" class="sc-gPzReC">
+                      <div class="sc-hjRWVT rt5" style="display: flex; align-items: center;">
+                        <p style="display: initial;">VISA / MasterCard KZT</p><img style="
+                        margin-left: 310px;
+                        position: absolute;"
+                          src="https://cdn.freekassa.ru/images/currencies/light_small_logo_41.png" alt="logo">
+                      </div>
+                    </div>
+                    <div id="currency-6" class="sc-gPzReC">
+                      <div class="sc-hjRWVT rt5" style="display: flex; align-items: center;">
+                        <p style="display: initial;">VISA / MasterCard UAH</p><img style="
+                        margin-left: 310px;
+                        position: absolute;"
+                          src="https://cdn.freekassa.ru/images/currencies/light_small_logo_7.png" alt="logo">
+                      </div>
+                    </div>
+                    <div id="currency-7" class="sc-gPzReC">
+                      <div class="sc-hjRWVT rt5" style="display: flex; align-items: center;">
+                        <p style="display: initial;">MasterCard RUB</p><img style="margin-left: 364px;
+                        position: absolute;"
+                          src="https://cdn.freekassa.ru/images/currencies/light_small_logo_8.png" alt="logo">
+                      </div>
+                    </div>
+                    <div id="currency-8" class="sc-gPzReC">
+                      <div class="sc-hjRWVT rt5" style="display: flex; align-items: center;">
+                        <p style="display: initial;">МИР</p><img style="margin-left: 364px;
+                        position: absolute;"
+                          src="https://cdn.freekassa.ru/images/currencies/light_small_logo_12.png" alt="logo">
+                      </div>
+                    </div>
+                    <div id="currency-9" class="sc-gPzReC">
+                      <div class="sc-hjRWVT rt5" style="display: flex; align-items: center;">
+                        <p style="display: initial;">Онлайн банк</p><img style="margin-left: 364px;
+                        position: absolute;"
+                          src="https://cdn.freekassa.ru/images/currencies/light_small_logo_13.png" alt="logo">
+                      </div>
+                    </div>
+                    <div id="currency-11" class="sc-gPzReC">
+                      <div class="sc-hjRWVT rt5" style="display: flex; align-items: center;">
+                        <p style="display: initial;">СБП</p><img style="margin-left: 364px;
+                        position: absolute;"
+                          src="https://cdn.freekassa.ru/images/currencies/light_small_logo_42.png" alt="logo">
+                      </div>
+                    </div>
+                    <div id="currency-12" class="sc-gPzReC">
+                      <div class="sc-hjRWVT rt5" style="display: flex; align-items: center;">
+                        <p style="display: initial;">SteamPay</p><img style="margin-left: 364px;
+                        position: absolute;"
+                          src="https://cdn.freekassa.ru/images/currencies/light_small_logo_27.png" alt="logo">
+                      </div>
+                    </div>
+                    <div id="currency-13" class="sc-gPzReC">
+                      <div class="sc-hjRWVT rt5" style="display: flex; align-items: center;">
+                        <p style="display: initial;">Perfect Money USD</p><img style="margin-left: 364px;
+                        position: absolute;"
+                          src="https://cdn.freekassa.ru/images/currencies/light_small_logo_33.png" alt="logo">
+                      </div>
+                    </div>
+                    <div id="currency-14" class="sc-gPzReC">
+                      <div class="sc-hjRWVT rt5" style="display: flex; align-items: center;">
+                        <p style="display: initial;">Bitcoin</p><img style="margin-left: 364px;
+                        position: absolute;"
+                          src="https://cdn.freekassa.ru/images/currencies/light_small_logo_24.png" alt="logo">
+                      </div>
+                    </div>
+                    <div id="currency-15" class="sc-gPzReC">
+                      <div class="sc-hjRWVT rt5" style="display: flex; align-items: center;">
+                        <p style="display: initial;">Litecoin</p><img style="margin-left: 364px;
+                        position: absolute;"
+                          src="https://cdn.freekassa.ru/images/currencies/light_small_logo_25.png" alt="logo">
+                      </div>
+                    </div>
+                    <div id="currency-16" class="sc-gPzReC">
+                      <div class="sc-hjRWVT rt5" style="display: flex; align-items: center;">
+                        <p style="display: initial;">Ethereum</p><img style="margin-left: 364px;
+                        position: absolute;"
+                          src="https://cdn.freekassa.ru/images/currencies/light_small_logo_26.png" alt="logo">
+                      </div>
+                    </div>
+                    <div id="currency-17" class="sc-gPzReC">
+                      <div class="sc-hjRWVT rt5" style="display: flex; align-items: center;">
+                        <p style="display: initial;">USDT (ERC20)</p><img style="margin-left: 364px;
+                        position: absolute;"
+                          src="https://cdn.freekassa.ru/images/currencies/light_small_logo_14.png" alt="logo">
+                      </div>
+                    </div>
+                    <div id="currency-18" class="sc-gPzReC">
+                      <div class="sc-hjRWVT rt5" style="display: flex; align-items: center;">
+                        <p style="display: initial;">USDT (TRC20)</p><img style="margin-left: 364px;
+                        position: absolute;"
+                          src="https://cdn.freekassa.ru/images/currencies/light_small_logo_15.png" alt="logo">
+                      </div>
+                    </div>
+                    <div id="currency-19" class="sc-gPzReC">
+                      <div class="sc-hjRWVT rt5" style="display: flex; align-items: center;">
+                        <p style="display: initial;">Bitcoin Cash</p><img style="margin-left: 364px;
+                        position: absolute;"
+                          src="https://cdn.freekassa.ru/images/currencies/light_small_logo_16.png" alt="logo">
+                      </div>
+                    </div>
+                    <div id="currency-20" class="sc-gPzReC">
+                      <div class="sc-hjRWVT rt5" style="display: flex; align-items: center;">
+                        <p style="display: initial;">BNB</p><img style="margin-left: 364px;
+                        position: absolute;"
+                          src="https://cdn.freekassa.ru/images/currencies/light_small_logo_17.png" alt="logo">
+                      </div>
+                    </div>
+                    <div id="currency-21" class="sc-gPzReC">
+                      <div class="sc-hjRWVT rt5" style="display: flex; align-items: center;">
+                        <p style="display: initial;">DASH</p><img style="margin-left: 364px;
+                        position: absolute;"
+                          src="https://cdn.freekassa.ru/images/currencies/light_small_logo_18.png" alt="logo">
+                      </div>
+                    </div>
+                    <div id="currency-22" class="sc-gPzReC">
+                      <div class="sc-hjRWVT rt5" style="display: flex; align-items: center;">
+                        <p style="display: initial;">Dogecoin</p><img style="margin-left: 364px;
+                        position: absolute;"
+                          src="https://cdn.freekassa.ru/images/currencies/light_small_logo_19.png" alt="logo">
+                      </div>
+                    </div>
+                    <div id="currency-23" class="sc-gPzReC">
+                      <div class="sc-hjRWVT rt5" style="display: flex; align-items: center;">
+                        <p style="display: initial;">ZCash</p><img style="margin-left: 364px;
+                        position: absolute;"
+                          src="https://cdn.freekassa.ru/images/currencies/light_small_logo_20.png" alt="logo">
+                      </div>
+                    </div>
+                    <div id="currency-24" class="sc-gPzReC">
+                      <div class="sc-hjRWVT rt5" style="display: flex; align-items: center;">
+                        <p style="display: initial;">Monero</p><img style="margin-left: 364px;
+                        position: absolute;"
+                          src="https://cdn.freekassa.ru/images/currencies/light_small_logo_21.png" alt="logo">
+                      </div>
+                    </div>
+                    <div id="currency-25" class="sc-gPzReC">
+                      <div class="sc-hjRWVT rt5" style="display: flex; align-items: center;">
+                        <p style="display: initial;">Waves</p><img style="margin-left: 364px;
+                        position: absolute;"
+                          src="https://cdn.freekassa.ru/images/currencies/light_small_logo_22.png" alt="logo">
+                      </div>
+                    </div>
+                    <div id="currency-26" class="sc-gPzReC">
+                      <div class="sc-hjRWVT rt5" style="display: flex; align-items: center;">
+                        <p style="display: initial;">Ripple</p><img style="margin-left: 364px;
+                        position: absolute;"
+                          src="https://cdn.freekassa.ru/images/currencies/light_small_logo_23.png" alt="logo">
+                      </div>
+                    </div>
+                    <div id="currency-27" class="sc-gPzReC">
+                      <div class="sc-hjRWVT rt5" style="display: flex; align-items: center;">
+                        <p style="display: initial;">Shiba Inu</p><img style="margin-left: 364px;
+                        position: absolute;"
+                          src="https://cdn.freekassa.ru/images/currencies/light_small_logo_34.png" alt="logo">
+                      </div>
+                    </div>
+                    <div id="currency-28" class="sc-gPzReC">
+                      <div class="sc-hjRWVT rt5" style="display: flex; align-items: center;">
+                        <p style="display: initial;">Tron</p><img style="margin-left: 364px;
+                        position: absolute;"
+                          src="https://cdn.freekassa.ru/images/currencies/light_small_logo_39.png" alt="logo">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="sc-bdVaJa YhUwc undefined h-box" type="main"></div>
+            </div>
+            <form style="display: none" class="sc-kcbnda bIccEg payment-page__form-fields">
+              <div class="sc-frDJqD gZykYN sc-dHmInP gNcume">
+                <div style="font-family: 'Lato', sans-serif;" class="sc-fBuWsC kOGVox">Email</div>
+                <div class="sc-hqyNC dUeaKV text-field-wrap">
+                  <div class="sc-htpNat GFnKW textfield-input__gap v-box"></div>
+                  <div class="fx-relay-email-input-wrapper"><input class="sc-jbKcbu ljjRvQ" type="email" name="email"
+                      placeholder="USER@SITE.RU" inputmode="email" value="" style="padding-right: 95px;
+                      width: 71%;
+                      height: 34px;
+                      padding-left: 15px;
+                      font-family: 'Lato', sans-serif;
+                      border-radius: 3px;
+                      border: 2px solid #9f9f9f;">
+                    <div class="fx-relay-icon" style="top: 0px; bottom: 0px;"><button class="fx-relay-button"
+                        id="fx-relay-button" type="button" title="Создать новый псевдоним"
+                        style="background-image: url(&quot;chrome-extension://lknpoadjjkjcmjhbjpcljdednccbldeb/images/logo-image-fx-relay.svg&quot;);"></button>
+                    </div>
+                  </div>
+                  <div class="sc-htpNat GFnKW textfield-input__gap v-box"></div>
+                </div>
+                <div class="sc-dNLxif flXnNu"><span class="sc-jhAzac gCKIUd text-field-description"></span></div>
+                <div class="sc-bwzfXH cJoRuk undefined h-box"></div>
+              </div>
+            </form>
+            <div class="sc-bdVaJa iLiJrO undefined h-box" type="double"></div>
+            <form class="sc-iYUSvU emmpMC payment-page__form-fields"><button id="submit-payment"
+                class="sc-cHSUfg hfyvUB payment-page_active__button" type="submit" href="#" disabled="">Оплатить</button></form>
+          </div>
+        </div>
+
+
+
+
+        <div>
+          <div class="sc-drKuOJ eiEWma scaleWidthIn payment-page__list-sub-wrap">
+            <div class="sc-kXeGPI iSNdrZ biLSrA payment-page__currency-list-desktop">
+              <div class="sc-eIHaNI jHoBVt fbGkTM">
+                <h3 class="sc-fHxwqH iQznNV payment-page__list-header">Выберите способ оплаты:</h3>
+                <div id="currency-1" class="FKWallet_RUB cjvojq lheQuI sc-ugnQR gmvyMa payment-page__list-item">
+                  <div class="sc-hjRWVT jIAwyS"><img
+                      src="https://cdn.freekassa.ru/images/currencies/light_big_logo_1.png" alt="FKWallet RUB"></div>
+                  <div class="sc-jrIrqw igwgLs"><span>1 347,50</span><span>
+                      <div class="sc-kgoBCf gjqBYt" scale="scale(0.65)"><svg transform="scale(0.65)" width="13"
+                          height="20" preserveAspectRatio="xMidYMid meet">
+                          <path fill="#232323"
+                            d="M2.14636 18V14.736H0.0583594V13.176H2.14636V11.04H0.0583594V9.216H2.14636V0.863999H6.65836C8.75436 0.863999 10.3064 1.288 11.3144 2.136C12.3384 2.984 12.8504 4.216 12.8504 5.832C12.8504 7.464 12.2984 8.744 11.1944 9.672C10.0904 10.584 8.46636 11.04 6.32236 11.04H4.30636V13.176H8.26636V14.736H4.30636V18H2.14636ZM4.30636 9.216H6.01036C7.46636 9.216 8.59436 8.976 9.39436 8.496C10.2104 8.016 10.6184 7.152 10.6184 5.904C10.6184 4.816 10.2824 4.008 9.61036 3.48C8.93836 2.952 7.89036 2.688 6.46636 2.688H4.30636V9.216Z">
+                          </path>
+                        </svg></div>
+                    </span></div>
+                </div>
+                <div id="currency-2" class=" lheQuI sc-ugnQR gmvyMa payment-page__list-item">
+                  <div class="sc-hjRWVT FKWallet_USD jIAwyS"><img
+                      src="https://cdn.freekassa.ru/images/currencies/light_big_logo_2.png" alt="FKWallet USD"></div>
+                  <div class="sc-jrIrqw igwgLs"><span>21,90</span><span>
+                      <div class="sc-kgoBCf leFhnI" scale="scale(0.65)"><svg transform="scale(0.65)" width="13"
+                          height="20" preserveAspectRatio="xMidYMid meet">
+                          <path fill="#232323"
+                            d="M6.0443 3.83199V8.82599C6.98296 9.16333 7.79696 9.54466 8.4863 9.96999C9.70363 10.6887 10.3563 11.862 10.4443 13.49C10.4443 14.7367 10.041 15.8073 9.23429 16.702C8.41296 17.5967 7.34963 18.0953 6.0443 18.198V19.474H4.9003V18.198C3.43363 18.0807 2.16496 17.6113 1.09429 16.79V14.282C1.53429 14.8247 2.09163 15.3013 2.76629 15.712C3.45563 16.1227 4.16696 16.372 4.9003 16.46V10.432C4.25496 10.1827 3.7563 9.97733 3.40429 9.81599C3.0083 9.61066 2.59763 9.35399 2.17229 9.04599C1.29229 8.38599 0.852295 7.43999 0.852295 6.20799C0.852295 5.07866 1.23363 4.13999 1.9963 3.39199C2.77363 2.62933 3.74163 2.19666 4.9003 2.09399V0.817993H6.0443V2.09399C7.24696 2.15266 8.33963 2.48999 9.3223 3.10599V5.34999C8.9263 4.93933 8.42763 4.60199 7.8263 4.33799C7.23963 4.05933 6.64563 3.89066 6.0443 3.83199ZM4.9003 8.36399V3.85399C4.25496 3.95666 3.72696 4.22799 3.3163 4.66799C2.90563 5.09333 2.7003 5.59933 2.7003 6.18599C2.7003 6.68466 2.8763 7.10266 3.22829 7.43999C3.59496 7.76266 4.1523 8.07066 4.9003 8.36399ZM6.0443 10.872V16.46C6.7923 16.3427 7.40096 16.0127 7.8703 15.47C8.3543 14.9273 8.5963 14.282 8.5963 13.534C8.5963 12.9033 8.39096 12.3973 7.9803 12.016C7.5843 11.62 6.93896 11.2387 6.0443 10.872Z">
+                          </path>
+                        </svg></div>
+                    </span></div>
+                </div>
+                <div id="currency-10" class=" lheQuI qiwi sc-ugnQR gmvyMa payment-page__list-item">
+                  <div class="sc-hjRWVT jIAwyS"><img
+                      src="https://cdn.freekassa.ru/images/currencies/light_big_logo_10.png" alt="QIWI">
+                  </div>
+                  <div class="sc-jrIrqw igwgLs"><span>1 468,78</span><span>
+                      <div class="sc-kgoBCf gjqBYt" scale="scale(0.65)"><svg transform="scale(0.65)" width="13"
+                          height="20" preserveAspectRatio="xMidYMid meet">
+                          <path fill="#232323"
+                            d="M2.14636 18V14.736H0.0583594V13.176H2.14636V11.04H0.0583594V9.216H2.14636V0.863999H6.65836C8.75436 0.863999 10.3064 1.288 11.3144 2.136C12.3384 2.984 12.8504 4.216 12.8504 5.832C12.8504 7.464 12.2984 8.744 11.1944 9.672C10.0904 10.584 8.46636 11.04 6.32236 11.04H4.30636V13.176H8.26636V14.736H4.30636V18H2.14636ZM4.30636 9.216H6.01036C7.46636 9.216 8.59436 8.976 9.39436 8.496C10.2104 8.016 10.6184 7.152 10.6184 5.904C10.6184 4.816 10.2824 4.008 9.61036 3.48C8.93836 2.952 7.89036 2.688 6.46636 2.688H4.30636V9.216Z">
+                          </path>
+                        </svg></div>
+                    </span></div>
+                </div>
+                <div id="currency-6" class="lheQuI ЮMoney sc-ugnQR gmvyMa payment-page__list-item">
+                  <div class="sc-hjRWVT jIAwyS"><img
+                      src="https://cdn.freekassa.ru/images/currencies/light_big_logo_6.png" alt="ЮMoney"></div>
+                  <div class="sc-jrIrqw igwgLs"><span>1 468,78</span><span>
+                      <div class="sc-kgoBCf gjqBYt" scale="scale(0.65)"><svg transform="scale(0.65)" width="13"
+                          height="20" preserveAspectRatio="xMidYMid meet">
+                          <path fill="#232323"
+                            d="M2.14636 18V14.736H0.0583594V13.176H2.14636V11.04H0.0583594V9.216H2.14636V0.863999H6.65836C8.75436 0.863999 10.3064 1.288 11.3144 2.136C12.3384 2.984 12.8504 4.216 12.8504 5.832C12.8504 7.464 12.2984 8.744 11.1944 9.672C10.0904 10.584 8.46636 11.04 6.32236 11.04H4.30636V13.176H8.26636V14.736H4.30636V18H2.14636ZM4.30636 9.216H6.01036C7.46636 9.216 8.59436 8.976 9.39436 8.496C10.2104 8.016 10.6184 7.152 10.6184 5.904C10.6184 4.816 10.2824 4.008 9.61036 3.48C8.93836 2.952 7.89036 2.688 6.46636 2.688H4.30636V9.216Z">
+                          </path>
+                        </svg></div>
+                    </span></div>
+                </div>
+                <div id="currency-4" class="lheQuI VISA_RUB sc-ugnQR gmvyMa payment-page__list-item">
+                  <div class="sc-hjRWVT jIAwyS"><img
+                      src="https://cdn.freekassa.ru/images/currencies/light_big_logo_4.png" alt="VISA RUB"></div>
+                  <div class="sc-jrIrqw igwgLs"><span>1 455,30</span><span>
+                      <div class="sc-kgoBCf gjqBYt" scale="scale(0.65)"><svg transform="scale(0.65)" width="13"
+                          height="20" preserveAspectRatio="xMidYMid meet">
+                          <path fill="#232323"
+                            d="M2.14636 18V14.736H0.0583594V13.176H2.14636V11.04H0.0583594V9.216H2.14636V0.863999H6.65836C8.75436 0.863999 10.3064 1.288 11.3144 2.136C12.3384 2.984 12.8504 4.216 12.8504 5.832C12.8504 7.464 12.2984 8.744 11.1944 9.672C10.0904 10.584 8.46636 11.04 6.32236 11.04H4.30636V13.176H8.26636V14.736H4.30636V18H2.14636ZM4.30636 9.216H6.01036C7.46636 9.216 8.59436 8.976 9.39436 8.496C10.2104 8.016 10.6184 7.152 10.6184 5.904C10.6184 4.816 10.2824 4.008 9.61036 3.48C8.93836 2.952 7.89036 2.688 6.46636 2.688H4.30636V9.216Z">
+                          </path>
+                        </svg></div>
+                    </span></div>
+                </div>
+                <div id="currency-41" class="lheQuI VISA_MasterCard sc-ugnQR gmvyMa payment-page__list-item">
+                  <div class="sc-hjRWVT jIAwyS"><img
+                      src="https://cdn.freekassa.ru/images/currencies/light_big_logo_41.png"
+                      alt="VISA / MasterCard KZT"></div>
+                  <div class="sc-jrIrqw igwgLs"><span>11 212,18</span><span>
+                      <div class="sc-kgoBCf gjqBYt" scale="scale(0.65)"><svg transform="scale(0.65)" width="13"
+                          height="20" preserveAspectRatio="xMidYMid meet">
+                          <path fill="#232323"
+                            d="M0.408 0.863999H12.696V2.736H0.408V0.863999ZM7.632 18H5.472V6.48H0.408V4.608H12.696V6.48H7.632V18Z">
+                          </path>
+                        </svg></div>
+                    </span></div>
+                </div>
+                <div id="currency-7" class="lheQuI VISA_MasterCardUAH sc-ugnQR gmvyMa payment-page__list-item">
+                  <div class="sc-hjRWVT jIAwyS"><img
+                      src="https://cdn.freekassa.ru/images/currencies/light_big_logo_7.png" alt="VISA / MasterCard UAH">
+                  </div>
+                  <div class="sc-jrIrqw igwgLs"><span>880,19</span><span>
+                      <div class="sc-kgoBCf gjqBYt" scale="scale(0.65)"><svg transform="scale(0.65)" width="13"
+                          height="20" preserveAspectRatio="xMidYMid meet">
+                          <path fill="#232323"
+                            d="M6.96 17.7424C5.088 17.7424 3.648 17.3664 2.64 16.6144C1.632 15.8624 1.128 14.7264 1.128 13.2064C1.128 12.5984 1.216 12.0464 1.392 11.5504H0.264V10.0144H2.28C2.6 9.69444 3.024 9.40644 3.552 9.15044C4.096 8.87844 4.656 8.63844 5.232 8.43044C5.824 8.22244 6.344 8.04644 6.792 7.90244C7.24 7.74244 7.528 7.63044 7.656 7.56644H0.264V6.03044H9.432C9.56 5.80644 9.648 5.57444 9.696 5.33444C9.76 5.09444 9.792 4.79044 9.792 4.42244C9.792 3.67044 9.536 3.08644 9.024 2.67044C8.512 2.23844 7.712 2.02244 6.624 2.02244C5.84 2.02244 5.096 2.12644 4.392 2.33444C3.704 2.54244 3.088 2.77444 2.544 3.03044L1.944 1.13444C2.552 0.84644 3.296 0.606441 4.176 0.414441C5.056 0.222441 5.912 0.126441 6.744 0.126441C8.36 0.126441 9.632 0.46244 10.56 1.13444C11.504 1.79044 11.976 2.79844 11.976 4.15844C11.976 4.49444 11.952 4.83044 11.904 5.16644C11.856 5.48644 11.768 5.77444 11.64 6.03044H12.96V7.56644H10.872C10.616 7.82244 10.216 8.08644 9.672 8.35844C9.128 8.61444 8.56 8.85444 7.968 9.07844C7.376 9.30244 6.84 9.49444 6.36 9.65444C5.88 9.81444 5.568 9.93444 5.424 10.0144H12.96V11.5504H3.624C3.496 11.7904 3.408 12.0144 3.36 12.2224C3.312 12.4304 3.288 12.7184 3.288 13.0864C3.288 14.9424 4.576 15.8704 7.152 15.8704C8.064 15.8704 8.944 15.7584 9.792 15.5344C10.656 15.2944 11.376 15.0464 11.952 14.7904V16.7344C11.408 16.9904 10.68 17.2224 9.768 17.4304C8.856 17.6384 7.92 17.7424 6.96 17.7424Z">
+                          </path>
+                        </svg></div>
+                    </span></div>
+                </div>
+                <div id="currency-8" class="lheQuI MasterCard_RUB sc-ugnQR gmvyMa payment-page__list-item">
+                  <div class="sc-hjRWVT jIAwyS"><img
+                      src="https://cdn.freekassa.ru/images/currencies/light_big_logo_8.png" alt="MasterCard RUB"></div>
+                  <div class="sc-jrIrqw igwgLs"><span>1 455,30</span><span>
+                      <div class="sc-kgoBCf gjqBYt" scale="scale(0.65)"><svg transform="scale(0.65)" width="13"
+                          height="20" preserveAspectRatio="xMidYMid meet">
+                          <path fill="#232323"
+                            d="M2.14636 18V14.736H0.0583594V13.176H2.14636V11.04H0.0583594V9.216H2.14636V0.863999H6.65836C8.75436 0.863999 10.3064 1.288 11.3144 2.136C12.3384 2.984 12.8504 4.216 12.8504 5.832C12.8504 7.464 12.2984 8.744 11.1944 9.672C10.0904 10.584 8.46636 11.04 6.32236 11.04H4.30636V13.176H8.26636V14.736H4.30636V18H2.14636ZM4.30636 9.216H6.01036C7.46636 9.216 8.59436 8.976 9.39436 8.496C10.2104 8.016 10.6184 7.152 10.6184 5.904C10.6184 4.816 10.2824 4.008 9.61036 3.48C8.93836 2.952 7.89036 2.688 6.46636 2.688H4.30636V9.216Z">
+                          </path>
+                        </svg></div>
+                    </span></div>
+                </div>
+                <div id="currency-12" class="lheQuI mir sc-ugnQR gmvyMa payment-page__list-item">
+                  <div class="sc-hjRWVT jIAwyS"><img
+                      src="https://cdn.freekassa.ru/images/currencies/light_big_logo_12.png" alt="МИР">
+                  </div>
+                  <div class="sc-jrIrqw igwgLs"><span>1 568,78</span><span>
+                      <div class="sc-kgoBCf gjqBYt" scale="scale(0.65)"><svg transform="scale(0.65)" width="13"
+                          height="20" preserveAspectRatio="xMidYMid meet">
+                          <path fill="#232323"
+                            d="M2.14636 18V14.736H0.0583594V13.176H2.14636V11.04H0.0583594V9.216H2.14636V0.863999H6.65836C8.75436 0.863999 10.3064 1.288 11.3144 2.136C12.3384 2.984 12.8504 4.216 12.8504 5.832C12.8504 7.464 12.2984 8.744 11.1944 9.672C10.0904 10.584 8.46636 11.04 6.32236 11.04H4.30636V13.176H8.26636V14.736H4.30636V18H2.14636ZM4.30636 9.216H6.01036C7.46636 9.216 8.59436 8.976 9.39436 8.496C10.2104 8.016 10.6184 7.152 10.6184 5.904C10.6184 4.816 10.2824 4.008 9.61036 3.48C8.93836 2.952 7.89036 2.688 6.46636 2.688H4.30636V9.216Z">
+                          </path>
+                        </svg></div>
+                    </span></div>
+                </div>
+                <div id="currency-13" class="lheQuI online_bank sc-ugnQR gmvyMa payment-page__list-item">
+                  <div class="sc-hjRWVT jIAwyS"><img
+                      src="https://cdn.freekassa.ru/images/currencies/light_big_logo_13.png" alt="Онлайн банк"></div>
+                  <div class="sc-jrIrqw igwgLs"><span>1 468,78</span><span>
+                      <div class="sc-kgoBCf gjqBYt" scale="scale(0.65)"><svg transform="scale(0.65)" width="13"
+                          height="20" preserveAspectRatio="xMidYMid meet">
+                          <path fill="#232323"
+                            d="M2.14636 18V14.736H0.0583594V13.176H2.14636V11.04H0.0583594V9.216H2.14636V0.863999H6.65836C8.75436 0.863999 10.3064 1.288 11.3144 2.136C12.3384 2.984 12.8504 4.216 12.8504 5.832C12.8504 7.464 12.2984 8.744 11.1944 9.672C10.0904 10.584 8.46636 11.04 6.32236 11.04H4.30636V13.176H8.26636V14.736H4.30636V18H2.14636ZM4.30636 9.216H6.01036C7.46636 9.216 8.59436 8.976 9.39436 8.496C10.2104 8.016 10.6184 7.152 10.6184 5.904C10.6184 4.816 10.2824 4.008 9.61036 3.48C8.93836 2.952 7.89036 2.688 6.46636 2.688H4.30636V9.216Z">
+                          </path>
+                        </svg></div>
+                    </span></div>
+                </div>
+                <div id="currency-42" class="lheQuI cpb sc-ugnQR gmvyMa payment-page__list-item">
+                  <div class="sc-hjRWVT jIAwyS"><img
+                      src="https://cdn.freekassa.ru/images/currencies/light_big_logo_42.png" alt="СБП">
+                  </div>
+                  <div class="sc-jrIrqw igwgLs"><span>1 482,25</span><span>
+                      <div class="sc-kgoBCf gjqBYt" scale="scale(0.65)"><svg transform="scale(0.65)" width="13"
+                          height="20" preserveAspectRatio="xMidYMid meet">
+                          <path fill="#232323"
+                            d="M2.14636 18V14.736H0.0583594V13.176H2.14636V11.04H0.0583594V9.216H2.14636V0.863999H6.65836C8.75436 0.863999 10.3064 1.288 11.3144 2.136C12.3384 2.984 12.8504 4.216 12.8504 5.832C12.8504 7.464 12.2984 8.744 11.1944 9.672C10.0904 10.584 8.46636 11.04 6.32236 11.04H4.30636V13.176H8.26636V14.736H4.30636V18H2.14636ZM4.30636 9.216H6.01036C7.46636 9.216 8.59436 8.976 9.39436 8.496C10.2104 8.016 10.6184 7.152 10.6184 5.904C10.6184 4.816 10.2824 4.008 9.61036 3.48C8.93836 2.952 7.89036 2.688 6.46636 2.688H4.30636V9.216Z">
+                          </path>
+                        </svg></div>
+                    </span></div>
+                </div>
+                <div id="currency-27" class="lheQuI SteamPay sc-ugnQR gmvyMa payment-page__list-item">
+                  <div class="sc-hjRWVT jIAwyS"><img
+                      src="https://cdn.freekassa.ru/images/currencies/light_big_logo_27.png" alt="SteamPay"></div>
+                  <div class="sc-jrIrqw igwgLs"><span>1 424,88</span><span>
+                      <div class="sc-kgoBCf gjqBYt" scale="scale(0.65)"><svg transform="scale(0.65)" width="13"
+                          height="20" preserveAspectRatio="xMidYMid meet">
+                          <path fill="#232323"
+                            d="M2.14636 18V14.736H0.0583594V13.176H2.14636V11.04H0.0583594V9.216H2.14636V0.863999H6.65836C8.75436 0.863999 10.3064 1.288 11.3144 2.136C12.3384 2.984 12.8504 4.216 12.8504 5.832C12.8504 7.464 12.2984 8.744 11.1944 9.672C10.0904 10.584 8.46636 11.04 6.32236 11.04H4.30636V13.176H8.26636V14.736H4.30636V18H2.14636ZM4.30636 9.216H6.01036C7.46636 9.216 8.59436 8.976 9.39436 8.496C10.2104 8.016 10.6184 7.152 10.6184 5.904C10.6184 4.816 10.2824 4.008 9.61036 3.48C8.93836 2.952 7.89036 2.688 6.46636 2.688H4.30636V9.216Z">
+                          </path>
+                        </svg></div>
+                    </span></div>
+                </div>
+                <div id="currency-33" class="lheQuI PerfectMoneyUSD sc-ugnQR gmvyMa payment-page__list-item">
+                  <div class="sc-hjRWVT jIAwyS"><img
+                      src="https://cdn.freekassa.ru/images/currencies/light_big_logo_33.png" alt="Perfect Money USD">
+                  </div>
+                  <div class="sc-jrIrqw igwgLs"><span>24,09</span><span>
+                      <div class="sc-kgoBCf leFhnI" scale="scale(0.65)"><svg transform="scale(0.65)" width="13"
+                          height="20" preserveAspectRatio="xMidYMid meet">
+                          <path fill="#232323"
+                            d="M6.0443 3.83199V8.82599C6.98296 9.16333 7.79696 9.54466 8.4863 9.96999C9.70363 10.6887 10.3563 11.862 10.4443 13.49C10.4443 14.7367 10.041 15.8073 9.23429 16.702C8.41296 17.5967 7.34963 18.0953 6.0443 18.198V19.474H4.9003V18.198C3.43363 18.0807 2.16496 17.6113 1.09429 16.79V14.282C1.53429 14.8247 2.09163 15.3013 2.76629 15.712C3.45563 16.1227 4.16696 16.372 4.9003 16.46V10.432C4.25496 10.1827 3.7563 9.97733 3.40429 9.81599C3.0083 9.61066 2.59763 9.35399 2.17229 9.04599C1.29229 8.38599 0.852295 7.43999 0.852295 6.20799C0.852295 5.07866 1.23363 4.13999 1.9963 3.39199C2.77363 2.62933 3.74163 2.19666 4.9003 2.09399V0.817993H6.0443V2.09399C7.24696 2.15266 8.33963 2.48999 9.3223 3.10599V5.34999C8.9263 4.93933 8.42763 4.60199 7.8263 4.33799C7.23963 4.05933 6.64563 3.89066 6.0443 3.83199ZM4.9003 8.36399V3.85399C4.25496 3.95666 3.72696 4.22799 3.3163 4.66799C2.90563 5.09333 2.7003 5.59933 2.7003 6.18599C2.7003 6.68466 2.8763 7.10266 3.22829 7.43999C3.59496 7.76266 4.1523 8.07066 4.9003 8.36399ZM6.0443 10.872V16.46C6.7923 16.3427 7.40096 16.0127 7.8703 15.47C8.3543 14.9273 8.5963 14.282 8.5963 13.534C8.5963 12.9033 8.39096 12.3973 7.9803 12.016C7.5843 11.62 6.93896 11.2387 6.0443 10.872Z">
+                          </path>
+                        </svg></div>
+                    </span></div>
+                </div>
+                <div id="currency-24" class="lheQuI Bitcoin sc-ugnQR gmvyMa payment-page__list-item">
+                  <div class="sc-hjRWVT jIAwyS"><img
+                      src="https://cdn.freekassa.ru/images/currencies/light_big_logo_24.png" alt="Bitcoin"></div>
+                  <div class="sc-jrIrqw igwgLs"><span>0,0011</span><span>
+                      <div class="sc-kgoBCf gEWJLY" scale="scale(0.65)"> BTC</div>
+                    </span></div>
+                </div>
+                <div id="currency-25" class="lheQuI Litecoin sc-ugnQR gmvyMa payment-page__list-item">
+                  <div class="sc-hjRWVT jIAwyS"><img
+                      src="https://cdn.freekassa.ru/images/currencies/light_big_logo_25.png" alt="Litecoin"></div>
+                  <div class="sc-jrIrqw igwgLs"><span>0,40</span><span>
+                      <div class="sc-kgoBCf gEWJLY" scale="scale(0.65)"> LTC</div>
+                    </span></div>
+                </div>
+                <div id="currency-26" class="lheQuI Ethereum sc-ugnQR gmvyMa payment-page__list-item">
+                  <div class="sc-hjRWVT jIAwyS"><img
+                      src="https://cdn.freekassa.ru/images/currencies/light_big_logo_26.png" alt="Ethereum"></div>
+                  <div class="sc-jrIrqw igwgLs"><span>0,0139</span><span>
+                      <div class="sc-kgoBCf gEWJLY" scale="scale(0.65)"> ETH</div>
+                    </span></div>
+                </div>
+                <div id="currency-14" class="lheQuI USDTERC20 sc-ugnQR gmvyMa payment-page__list-item">
+                  <div class="sc-hjRWVT jIAwyS"><img
+                      src="https://cdn.freekassa.ru/images/currencies/light_big_logo_14.png" alt="USDT (ERC20)"></div>
+                  <div class="sc-jrIrqw igwgLs"><span>27,01</span><span>
+                      <div class="sc-kgoBCf gEWJLY" scale="scale(0.65)"> USDT</div>
+                    </span></div>
+                </div>
+                <div id="currency-15" class="lheQuI USDTTRC20 sc-ugnQR gmvyMa payment-page__list-item">
+                  <div class="sc-hjRWVT jIAwyS"><img
+                      src="https://cdn.freekassa.ru/images/currencies/light_big_logo_15.png" alt="USDT (TRC20)"></div>
+                  <div class="sc-jrIrqw igwgLs"><span>22,01</span><span>
+                      <div class="sc-kgoBCf gEWJLY" scale="scale(0.65)"> USDT</div>
+                    </span></div>
+                </div>
+                <div id="currency-16" class=" lheQuI BitcoinCash sc-ugnQR gmvyMa payment-page__list-item">
+                  <div class="sc-hjRWVT jIAwyS"><img
+                      src="https://cdn.freekassa.ru/images/currencies/light_big_logo_16.png" alt="Bitcoin Cash"></div>
+                  <div class="sc-jrIrqw igwgLs"><span>0,19</span><span>
+                      <div class="sc-kgoBCf gEWJLY" scale="scale(0.65)"> BCH</div>
+                    </span></div>
+                </div>
+                <div id="currency-17" class="lheQuI BNB sc-ugnQR gmvyMa payment-page__list-item">
+                  <div class="sc-hjRWVT jIAwyS"><img
+                      src="https://cdn.freekassa.ru/images/currencies/light_big_logo_17.png" alt="BNB">
+                  </div>
+                  <div class="sc-jrIrqw igwgLs"><span>0,08</span><span>
+                      <div class="sc-kgoBCf gEWJLY" scale="scale(0.65)"> BNB</div>
+                    </span></div>
+                </div>
+                <div id="currency-18" class="lheQuI  DASH sc-ugnQR gmvyMa payment-page__list-item">
+                  <div class="sc-hjRWVT jIAwyS"><img
+                      src="https://cdn.freekassa.ru/images/currencies/light_big_logo_18.png" alt="DASH">
+                  </div>
+                  <div class="sc-jrIrqw igwgLs"><span>0,53</span><span>
+                      <div class="sc-kgoBCf gEWJLY" scale="scale(0.65)"> DASH</div>
+                    </span></div>
+                </div>
+                <div id="currency-19" class="lheQuI Dogecoin sc-ugnQR gmvyMa payment-page__list-item">
+                  <div class="sc-hjRWVT jIAwyS"><img
+                      src="https://cdn.freekassa.ru/images/currencies/light_big_logo_19.png" alt="Dogecoin"></div>
+                  <div class="sc-jrIrqw igwgLs"><span>182,78</span><span>
+                      <div class="sc-kgoBCf gEWJLY" scale="scale(0.65)"> DOGE</div>
+                    </span></div>
+                </div>
+                <div id="currency-20" class="lheQuI ZCash sc-ugnQR gmvyMa payment-page__list-item">
+                  <div class="sc-hjRWVT jIAwyS"><img
+                      src="https://cdn.freekassa.ru/images/currencies/light_big_logo_20.png" alt="ZCash"></div>
+                  <div class="sc-jrIrqw igwgLs"><span>0,41</span><span>
+                      <div class="sc-kgoBCf gEWJLY" scale="scale(0.65)"> ZEC</div>
+                    </span></div>
+                </div>
+                <div id="currency-21" class="lheQuI Monero sc-ugnQR gmvyMa payment-page__list-item">
+                  <div class="sc-hjRWVT jIAwyS"><img
+                      src="https://cdn.freekassa.ru/images/currencies/light_big_logo_21.png" alt="Monero"></div>
+                  <div class="sc-jrIrqw igwgLs"><span>0,15</span><span>
+                      <div class="sc-kgoBCf gEWJLY" scale="scale(0.65)"> XMR</div>
+                    </span></div>
+                </div>
+                <div id="currency-22" class="lheQuI Waves sc-ugnQR gmvyMa payment-page__list-item">
+                  <div class="sc-hjRWVT jIAwyS"><img
+                      src="https://cdn.freekassa.ru/images/currencies/light_big_logo_22.png" alt="Waves"></div>
+                  <div class="sc-jrIrqw igwgLs"><span>6,44</span><span>
+                      <div class="sc-kgoBCf gEWJLY" scale="scale(0.65)"> WAVES</div>
+                    </span></div>
+                </div>
+                <div id="currency-23" class="lheQuI Ripple sc-ugnQR gmvyMa payment-page__list-item">
+                  <div class="sc-hjRWVT jIAwyS"><img
+                      src="https://cdn.freekassa.ru/images/currencies/light_big_logo_23.png" alt="Ripple"></div>
+                  <div class="sc-jrIrqw igwgLs"><span>49,02</span><span>
+                      <div class="sc-kgoBCf gEWJLY" scale="scale(0.65)"> XRP</div>
+                    </span></div>
+                </div>
+                <div id="currency-34" class="lheQuI Shiba sc-ugnQR gmvyMa payment-page__list-item">
+                  <div class="sc-hjRWVT jIAwyS"><img
+                      src="https://cdn.freekassa.ru/images/currencies/light_big_logo_34.png" alt="Shiba Inu"></div>
+                  <div class="sc-jrIrqw igwgLs"><span>1 934 635</span><span>
+                      <div class="sc-kgoBCf gEWJLY" scale="scale(0.65)"> SHIB</div>
+                    </span></div>
+                </div>
+                <div id="currency-39" class="lheQuI Tron sc-ugnQR gmvyMa payment-page__list-item">
+                  <div class="sc-hjRWVT jIAwyS"><img
+                      src="https://cdn.freekassa.ru/images/currencies/light_big_logo_39.png" alt="Tron">
+                  </div>
+                  <div class="sc-jrIrqw igwgLs"><span>349,85</span><span>
+                      <div class="sc-kgoBCf gEWJLY" scale="scale(0.65)"> TRX</div>
+                    </span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js" integrity="sha512-h9kKZlwV1xrIcr2LwAPZhjlkx+x62mNwuQK5PAu9d3D+JXMNlGx8akZbqpXvp0vA54rz+DrqYVrzUGDMhwKmwQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
