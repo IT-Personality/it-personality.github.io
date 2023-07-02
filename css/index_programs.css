@@ -1687,7 +1687,7 @@ body {
     margin-top: 23px;
   }
 
-  .book_item ::before {
+  .book_item ::after {
     content: "";
     position: absolute;
     width: 85%;
@@ -1696,13 +1696,6 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background: -webkit-gradient(
-      linear,
-      left top,
-      right top,
-      from(#ff0000),
-      to(#ff5900)
-    );
     background: linear-gradient(to right, #ff0000, #ff5900);
   }
 
