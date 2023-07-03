@@ -1,4 +1,0 @@
-User-agent: Googlebot
-User-agent: *
-Host: www.
-Sitemap: http://klondikeitblogger.ga/sitemap.xml
