@@ -1,0 +1,27 @@
+body {
+    background-color: #080808;
+    overflow-x: hidden;
+  }
+.h404{
+    font-size: 19px;
+    font-family: "Roboto", sans-serif;
+    margin: 12%;
+}
+.h404 h1{
+    color: #ff1697;
+    display: flex;
+    justify-content: center;
+    font-size: 120px;
+}
+.h404 p{
+    color: #fff;
+    justify-content: center;
+    display: flex;
+    font-size: 37px;
+    margin-top: -8%;
+}
+@media screen and (max-width: 600px) {
+    .h404 p{
+        margin-top: -30%;
+    }
+}
