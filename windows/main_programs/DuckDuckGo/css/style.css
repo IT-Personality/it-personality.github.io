@@ -85,6 +85,14 @@ h4{
 }
 
 @media screen and (max-width: 600px) {
+  .contein {
+    display: inline-grid !important;
+    margin: 10px !important;
+}
+.contein img {
+  margin: 6px;
+  width: 97%;
+}
   .share_h6 {
     color: #fff;
     display: flex;

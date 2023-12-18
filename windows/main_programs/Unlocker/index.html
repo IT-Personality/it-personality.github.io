@@ -3,6 +3,8 @@
 
 <head>
     <title>Unlocker</title>
+    <meta name="description" content="Бесплатная утилита, позволяющая разблокировать файлы, используемые системным процессом или находящиеся в закрытом доступе.">
+
     <meta charset="UTF-8">
     <meta property="og:image" content="https://it-klondike.website/programs12/Unlocker/img/3.jpg">
     <meta property="og:url" content="https://it-klondike.website/">
@@ -11,20 +13,25 @@
         content="Бесплатная утилита, позволяющая разблокировать файлы, используемые системным процессом или находящиеся в закрытом доступе.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="img/favicon.png" rel="shortcut icon" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
+
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="../footer_component.css" />
     <link rel="stylesheet" href="../header_and_donwload_components.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-    <script>
-        $(function () {
-            $("#menu").load("https://verstkag.github.io/");
-        });
-    </script>
+    <style>
+        .contein{
+            display: flex;
+            justify-content: center;
+            margin: 10px;
+        }
+        .contein img{
+            margin: 6px;
+        }
+        
+    </style>
     <div id="menu"></div>
 
     <section class="page-section recent-game-page spad">
@@ -32,7 +39,7 @@
             <div class="photo">
                 <div class="container_img">
                     <div class="Driv1">
-                        <img src="img/Unlocker_logo.jpg" alt="">
+                        <img src="img/Unlocker_logo.jpg" alt="logo Unlocker">
                     </div>
                     <div class="DriverTest">
                         <b>Unlocker</b>
@@ -46,33 +53,33 @@
                              data-services="vkontakte,facebook,odnoklassniki,telegram,twitter,linkedin"></div>
                      </div>
                     
-                            <h4>Описание:</h4>
                     <p id="text21">
                         Вы когда-нибудь пытались удалить файл, а затем получали ошибку типа «Исходный или конечный файл
                         открыт» или «Файл используется другой программой или пользователем», и вы не можете избавиться
                         от файла? Тогда Unlocker — это ваше решение.<br>Если файл действительно защищен, откроется окно
                         защиты. Затем вам нужно только выбрать все пункты меню с помощью «разблокировать все».<br>
+                        <div class="contein">
+                            <img width="30%" src="img/3.jpg" alt="Unlocker">
+                        </div>
                     </p>
                     <div><a id="ifandonwlod" href="https://verstkag.github.io/filesprog/Unlocker1.9.2.exe">Скачать!</a></div>
                 </div>
-                <div class="Driver2 animate__animated animate__fadeInRight">
-                    <img src="img/3.jpg" alt="">
-                </div>
             </div>
     </section>
-
+    <div id="footer_content"></div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
    
-
+    <script>
+        $(function () {
+            $("#menu").load("https://verstkag.github.io/");
+        });
+    </script>
     <script>
         $(function () {
             $("#footer_content").load("https://verstkag-github-io.vercel.app/temp/footer_program-main.html");
         });
     </script>
-    <div id="footer_content"></div>
 </body>
-
 </html>

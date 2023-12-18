@@ -26,6 +26,7 @@ body {
   position: absolute;
   max-width: 100%;
 }
+
 .slider_wrapper {
   display: flex;
   flex-wrap: nowrap;
@@ -119,19 +120,6 @@ a:hover {
   -webkit-text-decoration: auto;
   text-decoration: auto;
   color: #333333;
-}
-.section-tits {
-  margin-top: 3%;
-}
-
-.section-tits h2 {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: #fff;
 }
 
 #menu__toggle {
@@ -232,16 +220,63 @@ a:hover {
 }
 .section-title h2 {
   color: #fff;
+  font-family: 'Inter', sans-serif;
 }
 
 .section-tit {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   color: #fff;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
+  margin-bottom: 25px;
+  display: flex;
   justify-content: center;
+  margin-left: auto;
+  font-family: 'Inter', sans-serif;
+}
+.section-tit h2{
+  padding-right: 740px;
+}
+.section-tit h2:after {
+  content: "";
+  display: block;
+  width: 398px;
+  margin-top: 11px;
+  border-bottom: 3px solid white;
+}
+
+.page-h {
+  color: #fff;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  font-family: 'Inter', sans-serif;
+}
+.page-h h2{
+  padding-right: 861px;
+}
+.page-h h2:after {
+  content: "";
+  display: block;
+  width: 275px;
+  margin-top: 11px;
+  border-bottom: 3px solid white;
+}
+
+.section-tits {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  font-family: 'Inter', sans-serif;
+}
+.section-tits h2{
+  padding-right: 805px;
+}
+.section-tits h2:after {
+  content: "";
+  display: block;
+  width: 329px;
+  margin-top: 11px;
+  border-bottom: 3px solid white;
 }
 
 .set-bg {
@@ -448,7 +483,7 @@ a {
   z-index: 4;
 }
 
-#product {
+.product {
   background-color: #13181e;
   border-radius: 5px;
   padding: 9px;
@@ -497,10 +532,11 @@ a {
   padding-left: 4px;
   border: none;
   background: rgb(255, 255, 255);
+  margin-bottom: 18px;
 }
 
 .btn-51:hover {
-  color: #737373;
+  color: #4f4f4f;
 }
 
 .custom-btn {
@@ -753,11 +789,10 @@ a {
 }
 
 .rgi-content {
-  background: #030303;
-  border: 1px solid #030303;
+  background: #0c1318;
+  border-radius: 0px 0px 15px 15px;
   position: relative;
   padding: 13px;
-  height: 216px;
 }
 .recent-game-item .rgi-content h5 {
   margin-bottom: 7px;
@@ -848,6 +883,19 @@ a {
   width: 0;
   margin-right: 0px;
 }
+.page-h h2{
+  padding-right: 0;
+}
+.section-tit h2:after {
+  content: "";
+  display: block;
+  width: 347px;
+  margin-top: 11px;
+  border-bottom: 3px solid white;
+}
+.section-tit h2 {
+  padding-right: 0;
+}
   .hamburger-menu {
     position: fixed;
     z-index: 4;
@@ -909,7 +957,9 @@ a {
     -webkit-box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
     box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
   }
-
+  .product {
+    margin-bottom: 45px;
+}
   .program {
     display: block;
     border: none;
@@ -1078,7 +1128,7 @@ a {
 
   .section-title h2 {
     color: #fff;
-    font-size: 176%;
+    font-size: 205%;
     text-align: center;
     margin-left: -62%;
   }
@@ -1104,14 +1154,14 @@ a {
     margin-bottom: 5%;
   }
 
-  .recent-game-item .rgi-content {
-    padding: 15px 28px 24px;
-    background: #030303;
-    border: 1px solid #030303;
+  .recent-game-item 
+  .rgi-content {
+    background: #0c1318;
+    border-radius: 0px 0px 15px 15px;
     position: relative;
-    width: 103%;
+    padding: 13px;
     margin-bottom: 5%;
-    height: 260px;
+    height: 216px;
   }
 
   .content_block {
@@ -1124,10 +1174,13 @@ a {
 
   .section-tits h2 {
     color: #fff;
-    font-size: 176%;
+    font-size: 195%;
     margin-left: 0%;
     text-align: center;
-  }
+}
+.section-tits h2 {
+  padding-right: 0;
+}
 
  .section-tit h2 {
     font-size: 174%;
@@ -1188,6 +1241,15 @@ a {
     color: #0d0d0d;
     background: #0fffcf;
     z-index: 1;
+}
+.section-tits h2 {
+  padding-right: 0;
+}
+.section-tit h2 {
+  padding-right: 0;
+}
+.page-h h2 {
+  padding-right: 0;
 }
 .site-logo img {
   width: 35%;
@@ -1391,6 +1453,9 @@ a {
 }
 .section-title {
   margin-left: 0;
+}
+.font-prog{
+  font-family: 'Inter', sans-serif !important;
 }
 .section-title h2 {
   color: #fff;

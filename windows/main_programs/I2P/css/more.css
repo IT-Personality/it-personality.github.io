@@ -106,7 +106,6 @@ h4{
 .DriverTest img {
   width: 15%;
   margin-left: 4%;
-  margin-top: 6%;
 }
 .iobith1 h1 {
   display: flex;
@@ -135,6 +134,14 @@ h4{
   margin-left: -15px;
 }
 @media screen and (max-width: 600px) {
+  .contein {
+    display: inline-grid !important;
+    margin: 10px !important;
+}
+.contein img {
+  margin: 6px;
+  width: 97%;
+}
   .share_h6 {
     color: #fff;
     display: flex;
@@ -156,7 +163,7 @@ h4{
   .DriverTest img {
     width: 42%;
     margin-left: 29%;
-    margin-top: 6%;
+    margin-top: 20%;
   }
   .iobith1 h1 {
     display: flex;

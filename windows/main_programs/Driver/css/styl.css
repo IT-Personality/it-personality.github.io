@@ -84,7 +84,7 @@ h4{
 }
 #text21 {
   color: #9f9f9f;
-  padding-right: 36%;
+  padding-right: 12%;
   font-weight: 500;
   margin-top: 0%;
 }
@@ -110,7 +110,7 @@ h4{
     text-align: center;
     margin-bottom: 20px;
 }
-  .Driv1 {
+  .adv {
     display: flex;
     justify-content: center;
     margin-left: 3px;
@@ -145,6 +145,14 @@ h4{
     margin-left: 1%;
     margin-top: 2%;
   }
+  .contein {
+    display: inline-grid !important;
+    margin: 10px !important;
+}
+.contein img {
+  margin: 6px;
+  width: 97%;
+}
 }
 @media screen and (max-width: 992px) and (min-width: 601px) {
   .Driv1 img{

@@ -89,10 +89,13 @@ h4{
   margin-top: 15px;
 }
 @media screen and (max-width: 600px) {
-  .site-logo img {
-    width: 38% !important;
-    margin-top: 13px !important;
-    margin-left: 2% !important; 
+  .contein {
+    display: inline-grid !important;
+    margin: 10px !important;
+}
+.contein img {
+  margin: 6px;
+  width: 97%;
 }
 .container_img {
   max-width: 1184px;
@@ -118,9 +121,10 @@ h4{
   }
   .DriverTest {
     display: block;
-    margin-bottom: 34vh;
     text-align: center;
+    margin-bottom: 14rem;
 }
+
   #text21 {
     color: #9f9f9f;
     padding-right: 0%;
