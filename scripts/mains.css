@@ -1,0 +1,95 @@
+body {
+  background-color: #080808;
+  overflow-x: hidden;
+  word-wrap: break-word;
+}
+.site-logo img {
+  width: 205px;
+  margin-top: -5%;
+}
+#menu__toggle {
+  opacity: 0;
+}
+.menu__box {
+  float: right;
+  margin-right: 43px;
+}
+
+.menu__box {
+  list-style: none;
+}
+
+.menu__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: 15px;
+  justify-content: center;
+  margin-bottom: 4%;
+}
+
+.menu__box a {
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  margin-left: 24px;
+  font-weight: 500;
+  -webkit-text-decoration: auto;
+  text-decoration: auto;
+  white-space: nowrap;
+  padding: 7px 5px;
+}
+
+.menu__box a:hover {
+  color: #0fffcf;
+  -webkit-text-decoration: auto;
+  text-decoration: auto;
+}
+
+.email {
+  color: #25ffd3;
+  justify-content: center;
+  display: flex;
+  font-size: 120%;
+  margin-top: 15px;
+}
+.footer-section h6 {
+  display: flex;
+  color: #fff;
+  margin-top: 3px;
+  padding-right: 100px;
+}
+.footer-section {
+  overflow: hidden;
+  background: #101010;
+  margin-top: 2%;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: center;
+  margin-top: 14px;
+}
+.header-btn {
+  float: right;
+  margin-right: 0;
+}
+.footer-menu li a {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #aeaeae;
+  margin-left: 20px;
+}
+.it-personality {
+  color: #ff0000;
+  margin-left: 4px;
+  display: flex;
+  transition: 0.5s;
+}
+.it-personality:hover {
+  color: #0fffcf;
+  text-decoration: auto;
+}

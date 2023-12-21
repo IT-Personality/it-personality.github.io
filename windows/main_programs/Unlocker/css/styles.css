@@ -1,0 +1,159 @@
+body {
+  background-color: #080808;
+  overflow-x: hidden;
+}
+::-moz-selection {
+  background: rgb(235, 235, 235);
+  color: rgb(15, 15, 15);
+}
+
+::selection {
+  background: rgb(235, 235, 235);
+  color: rgb(15, 15, 15);
+}
+h4{
+  color: #fff;
+}
+::-moz-selection {
+  background: rgb(235, 235, 235);
+  color: rgb(15, 15, 15);
+}
+
+::-webkit-selection {
+  background: rgb(235, 235, 235);
+  color: rgb(15, 15, 15);
+}
+::-webkit-scrollbar {
+  width: 15px;
+  opacity: 0;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d0d0d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #323232;
+}
+
+.share_h6{
+  color: #fff;
+  display: flex;
+  padding-right: 17px;
+  font-size: larger;
+  align-items: center;
+}
+.soch {
+  margin-left: 7%;
+  display: flex;
+  margin-top: -133px;
+  margin-bottom: 1%;
+}
+.container {
+  max-width: 1176px;
+}
+.container_img {
+  max-width: 1176px;
+  padding-right: 50%;
+  padding-left: 50%;
+}
+.DriverTest b {
+  margin-left: -50%;
+  font-size: xx-large;
+  word-break: initial;
+  color: #fff;
+}
+.DriverTest {
+  display: inline-block;
+  margin-bottom: 34vh;
+}
+.Driv1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 6vh;
+}
+.Driv1 img {
+  display: flex;
+  width: 37vh;
+  margin-top: 4vh;
+}
+.Driver2 img {
+  width: 42%;
+  margin-left: 65%;
+  margin-top: -13%;
+}
+#text21 {
+  color: #9f9f9f;
+  padding-right: 36%;
+  font-weight: 500;
+  margin-top: 15px;
+}
+@media screen and (max-width: 600px) {
+  .contein {
+    display: inline-grid !important;
+    margin: 10px !important;
+}
+.contein img {
+  margin: 6px;
+  width: 97%;
+}
+.container_img {
+  max-width: 1184px;
+  padding-right: 0%;
+  padding-left: 0%;
+}
+.share_h6 {
+  color: #fff;
+  display: initial;
+  font-size: larger;
+}
+  .Driv1 {
+    display: flex;
+    justify-content: center;
+    margin-left: 3px;
+    margin-top: 0vh;
+  }
+  .Driv1 img {
+    margin-top: 12vh;
+  }
+  .DriverTest b {
+    margin-left: 0%;
+  }
+  .DriverTest {
+    display: block;
+    text-align: center;
+    margin-bottom: 14rem;
+}
+
+  #text21 {
+    color: #9f9f9f;
+    padding-right: 0%;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 0%;
+}
+  .Driver2 img {
+    width: 100%;
+    margin-left: -1%;
+    margin-top: 19%;
+  }
+  .soch {
+    display: block;
+    margin-left: 0%;
+    margin-top: -191px;
+    text-align: center;
+    margin-bottom: 6%;
+}
+}
+
+@media screen and (max-width: 992px) and (min-width: 601px) {
+  .Driv1 img{
+    display: block !important;
+  }
+  .soch {
+    margin-left: 7%;
+    display: flex;
+    margin-top: -217px !important;
+    margin-bottom: 1%;
+}
+}
