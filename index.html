@@ -15,7 +15,7 @@
 
     <meta name="autor" content="IT-Personality">
     <meta name="mailru-domain" content="eGBg2AMFs14hhUug" />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="img/favicon.png" rel="shortcut icon" />
     <link rel="stylesheet" href="css/bootstrap18.min.css" />
     <link rel="stylesheet" href="css/main1.css" />
@@ -129,8 +129,21 @@
         <div class="page-h">
             <h2>ПО под Windows</h2>
         </div>
-        <div class="content_block">
-            <div class="cont1">
+    <div class="swiper mySwiper container" style="max-width: 1230px;">
+        <div class="content_block swiper-wrapper">
+            <div class="cont1 swiper-slide" style="margin-left: 50%;">
+                <div class="feature-item set-bg" data-setbg="img/programm/mini.webp">
+                    <span class="cata new">22.12.2023</span>
+                    <div class="fi-content text-white">
+                        <h5><a href="windows/MiniBin/" target="_blank">MiniBin
+                            </a></h5>
+                        <p>MiniBin - утилита, которая дополнит Вашу панель уведомлений иконкой Корзины. Расширение актуально для пользователей с Windows</p>
+                        <div><a id="item_program" href="windows/MiniBin/" target="_blank">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont2 swiper-slide">
                 <div class="feature-item set-bg" data-setbg="img/features/01.png">
                     <span class="cata new">02.07.2022</span>
                     <div class="fi-content text-white">
@@ -143,31 +156,19 @@
                     </div>
                 </div>
             </div>
-            <div class="cont2">
-                <div class="feature-item set-bg" data-setbg="img/features/02.jpg">
-                    <span class="cata new">02.07.2022</span>
+            <div class="cont3 swiper-slide">
+                <div class="feature-item set-bg" data-setbg="img/programm/mm.webp">
+                    <span class="cata new">22.12.2023</span>
                     <div class="fi-content text-white">
-                        <h5><a href="windows/main_programs/Unlocker/" target="_blank">Unlocker</a></h5>
-                        <p>Бесплатная утилита, позволяющая разблокировать файлы, используемые системным процессом или
-                            находящиеся в закрытом доступе.</p>
-                        <div><a id="item_program" href="windows/main_programs/Unlocker/" target="_blank">Подробнее</a>
+                        <h5><a href="windows/Moo0%20SystemMonitor/" target="_blank">Moo0 SystemMonitor
+                            </a></h5>
+                        <p>Программа для мониторинга использования системных ресурсов ПК. Отображает различную информацию прямо на рабочем столе в виде панели. </p>
+                        <div><a id="item_program" href="windows/Moo0%20SystemMonitor/" target="_blank">Подробнее</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="cont3">
-                <div class="feature-item set-bg" data-setbg="img/features/03.png">
-                    <span class="cata new">02.07.2022</span>
-                    <div class="fi-content text-white">
-                        <h5><a href="windows/main_programs/reg/" target="_blank">Reg Organizer</a></h5>
-                        <p> Это программное обеспечение, предназначено для полного удаления программ,настройки
-                            автоматически запускаемых приложений, расширенной чистки и оптимизации Windows.</p>
-                        <div><a id="item_program" href="windows/main_programs/reg/" target="_blank">Подробнее</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cont4">
+            <div class="cont3 swiper-slide">
                 <div class="feature-item set-bg" data-setbg="img/features/04.jpg">
                     <span class="cata new">02.07.2022</span>
                     <div class="fi-content text-white">
@@ -180,10 +181,64 @@
                     </div>
                 </div>
             </div>
+            <div class="cont3 swiper-slide">
+                <div class="feature-item set-bg" data-setbg="img/features/02.jpg">
+                    <span class="cata new">02.07.2022</span>
+                    <div class="fi-content text-white">
+                        <h5><a href="windows/main_programs/Unlocker/" target="_blank">Unlocker</a></h5>
+                        <p>Бесплатная утилита, позволяющая разблокировать файлы, используемые системным процессом или
+                            находящиеся в закрытом доступе.</p>
+                        <div><a id="item_program" href="windows/main_programs/Unlocker/" target="_blank">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont3 swiper-slide">
+                <div class="feature-item set-bg" data-setbg="img/features/03.png">
+                    <span class="cata new">02.07.2022</span>
+                    <div class="fi-content text-white">
+                        <h5><a href="windows/main_programs/reg/" target="_blank">Reg Organizer</a></h5>
+                        <p> Это программное обеспечение, предназначено для полного удаления программ,настройки
+                            автоматически запускаемых приложений, расширенной чистки и оптимизации Windows.</p>
+                        <div><a id="item_program" href="windows/main_programs/reg/" target="_blank">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div><a class="program" href="program.html" target="_blank">Еще программы</a></div>
-    </section>
+    </div>
 
+        <a class="program" href="program.html">Показать еще</a>
+    </section>
+    
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+      <!-- Initialize Swiper -->
+      <script>
+
+
+        var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 4,
+      grabCursor: true,
+      autoplay: {
+            delay: 4000,
+          },
+          breakpoints: {
+    // mobile + tablet - 320-990
+    320: {
+      slidesPerView: 1,
+    },
+    600: {
+      slidesPerView: 0,
+    },
+    // desktop >= 991
+    991: {
+      slidesPerView: 4
+    }
+  },
+    });
+      </script>
     <section class="recent-game-section spad set-bg">
         <div class="container">
             <div class="section-title text-center">
@@ -240,9 +295,10 @@
         <div class="section-tit">
             <h2>Программы под Android</h2>
         </div>
-        <div class="content_block">
-            <div class="cont1">
-                <div class="feature-item featitem-x set-bg" data-setbg="img/features/duck_duck_go.jpg">
+        
+        <div class="contentblock-2  container">
+            <div class="cont1 cont1-adap">
+                <div class="feature-item featitem-x set-bg " data-setbg="img/features/duck_duck_go.jpg" style="background-image: url(&quot;img/features/duck_duck_go.jpg&quot;);">
                     <span class="cata new">02.07.2022</span>
                     <div class="fi-content text-white">
                         <h5><a href="windows/main_programs/DuckDuckGo/" target="_blank">Программа DuckDuckGo</a></h5>
@@ -250,45 +306,37 @@
                             Интернет. И он сдерживает обещания!</p>
                         <div><a id="DuckDuck" href="windows/main_programs/DuckDuckGo/" target="_blank">Подробнее</a>
                         </div>
-                        <div><a id="DuckDuckdow"
-                                href="https://verstkag.github.io/filesprogandroid/com.duckduckgo.mobile.android_5.111.0_51110000.apk"
-                                target="_blank">Скачать сейчас!</a></div>
+                        <div><a id="DuckDuckdow" href="https://verstkag.github.io/filesprogandroid/com.duckduckgo.mobile.android_5.111.0_51110000.apk" target="_blank">Скачать сейчас!</a></div>
                     </div>
                 </div>
             </div>
             <div class="cont2">
-                <div class="feature-item featitem-x set-bg" data-setbg="img/features/img1.jpg">
+                <div class="feature-item featitem-x set-bg" data-setbg="img/features/img1.jpg" style="background-image: url(&quot;img/features/img1.jpg&quot;);">
                     <span class="cata new">02.07.2022</span>
                     <div class="fi-content text-white">
                         <h5><a href="windows/main_programs/EDS/" target="_blank">Программа EDS</a></h5>
                         <p>С помощью EDS вы можете скрыть и защитить ваши файлы от несанкционированного доступа к ним,
                             поместив их в зашифрованный контейнер.</p>
                         <div><a id="DuckDuck" href="windows/main_programs/EDS/" target="_blank">Подробнее</a></div>
-                        <div><a id="DuckDuckdow"
-                                href="https://verstkag.github.io/filesprogandroid/1603174597_eds-v2-0-0-243-mod-5mod_ru.apk"
-                                target="_blank">Скачать сейчас!</a></div>
+                        <div><a id="DuckDuckdow" href="https://verstkag.github.io/filesprogandroid/1603174597_eds-v2-0-0-243-mod-5mod_ru.apk" target="_blank">Скачать сейчас!</a></div>
                     </div>
                 </div>
             </div>
             <div class="cont3">
-                <div class="feature-item featitem-x set-bg"
-                    data-setbg="img/features/adobe-acrobat-reader-5-1024x576.jpg">
+                <div class="feature-item featitem-x set-bg" data-setbg="img/features/adobe-acrobat-reader-5-1024x576.jpg" style="background-image: url(&quot;img/features/adobe-acrobat-reader-5-1024x576.jpg&quot;);">
                     <span class="cata new">02.07.2022</span>
                     <div class="fi-content text-white">
                         <h5><a href="windows/main_programs/Adobe Acrobat Reader/" target="_blank">Adobe
                                 Acrobat Reader</a></h5>
                         <p>Adobe Acrobat Reader — читалка для PDF-файлов. Adobe Acrobat Reader для Android предлагает
                             такое же высокое качество просмотра PDF, как на рабочем столе.</p>
-                        <div><a id="DuckDuck" href="windows/main_programs/Adobe Acrobat Reader"
-                                target="_blank">Подробнее</a></div>
-                        <div><a id="DuckDuckdow"
-                                href="https://verstkag.github.io/filesprogandroid/com-adobe-reader-1923120999-61590211-5e5be50a18321798cf865f57be91c0df.apk"
-                                target="_blank">Скачать сейчас!</a></div>
+                        <div><a id="DuckDuck" href="windows/main_programs/Adobe Acrobat Reader" target="_blank">Подробнее</a></div>
+                        <div><a id="DuckDuckdow" href="https://verstkag.github.io/filesprogandroid/com-adobe-reader-1923120999-61590211-5e5be50a18321798cf865f57be91c0df.apk" target="_blank">Скачать сейчас!</a></div>
                     </div>
                 </div>
             </div>
             <div class="cont4">
-                <div class="feature-item featitem-x set-bg" data-setbg="img/features/unnamed.png">
+                <div class="feature-item featitem-x set-bg" data-setbg="img/features/unnamed.png" style="background-image: url(&quot;img/features/unnamed.png&quot;);">
                     <span class="cata new">02.07.2022</span>
                     <div class="fi-content text-white">
                         <h5><a href="windows/main_programs/I2P/" target="_blank">Анонимная сеть I2P
@@ -297,14 +345,14 @@
                             можешь ходить по сайтам и пользоваться сервисами, не раскрывая сторонним лицам ни байта
                             своей информации.</p>
                         <div><a id="DuckDuck" href="windows/main_programs/I2P/" target="_blank">Подробнее</a></div>
-                        <div><a id="DuckDuckdow" href="https://verstkag.github.io/filesprogandroid/app.apk"
-                                target="_blank">Скачать сейчас!</a></div>
+                        <div><a id="DuckDuckdow" href="https://verstkag.github.io/filesprogandroid/app.apk" target="_blank">Скачать сейчас!</a></div>
                     </div>
                 </div>
             </div>
         </div>
+
         <div>
-            <rut><a class="program" href="program_android.html" target="_blank">Еще программы</a></rut>
+            <rut><a class="program" href="program_android.html" target="_blank">Показать еще</a></rut>
         </div>
     </section>
 
@@ -318,10 +366,10 @@
     <div class="slider_wrapper">
         <a id="prev"><img class="prev" src="/img/arrow-left.png" alt="prev"></a>
 
-        <div class="myslide">
-            <div class="slider_item pack_1">
+        <div class="myslide" >
+            <div class="slider_item pack_1 " >
                 <div class="block_goods">
-                    <div class="col-lg-3 col-md-6 cont1">
+                    <div class="col-lg-3 col-md-6 cont1 cont1-adap swiper-slide">
                         <div class="review-item">
                             <div class="review-cover set-bg" data-setbg="img/review/01.jpg">
                             </div>
@@ -333,7 +381,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 cont2">
+                    <div class="col-lg-3 col-md-6 cont2 swiper-slide">
                         <div class="review-item">
                             <div class="review-cover set-bg" data-setbg="img/review/05.jpg">
                             </div>
@@ -346,7 +394,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 cont3">
+                    <div class="col-lg-3 col-md-6 cont3 swiper-slide">
                         <div class="review-item">
                             <div class="review-cover set-bg" data-setbg="img/review/03.jpg">
                             </div>
@@ -360,7 +408,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 cont4">
+                    <div class="col-lg-3 col-md-6 cont4 swiper-slide">
                         <div class="review-item">
                             <div class="review-cover set-bg" data-setbg="img/review/04.png">
                             </div>
@@ -380,7 +428,7 @@
         <div class="myslide">
             <div class="slider_item pack_1">
                 <div class="block_goods">
-                    <div class="col-lg-3 col-md-6 cont1">
+                    <div class="col-lg-3 col-md-6 cont1 cont1-adap">
                         <div class="review-item">
                             <div class="review-cover set-bg" data-setbg="img/review/02.jpg">
                             </div>
@@ -399,7 +447,7 @@
                             <div class="review-cover set-bg" data-setbg="img/review/6.webp">
                             </div>
                             <div class="review-text">
-                                <h5>Проводная игровая мышь Delux M800, RGB, 16000 DPI, 58g. Легкая эргономичная мышь 1000 Гц с мягким канатным кабелем
+                                <h5>Проводная игровая мышь Delux M800, RGB, 16000 DPI, 58g. C мягким канатным кабелем
                                 </h5>
                                 <div><a class="product"
                                         href="https://aliexpress.ru/item/1005001999636994.html?spm=a2g2w.orderdetail.0.0.5ebc4aa6UQFpHr&sku_id=12000026262152353"
@@ -412,7 +460,7 @@
                             <div class="review-cover set-bg" data-setbg="img/review/07.webp">
                             </div>
                             <div class="review-text">
-                                <h5>Вращающийся На 360 Градусов Автомобильный Держатель Телефона.<br> Приклеивается К
+                                <h5>Вращающийся Автомобильный Держатель для Телефона. Приклеивается К
                                     Приборной Панели
                                 </h5>
                                 <div><a class="product"

@@ -232,8 +232,6 @@ a:hover {
 }
 
 .content_block {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-left: auto;
   -webkit-box-pack: center;
@@ -241,8 +239,16 @@ a:hover {
   justify-content: center;
   margin-right: auto;
   max-width: 1303px;
+  margin: 15px;
 }
-
+.contentblock-2 {
+  padding-right: 59px;
+  padding-left: 59px;
+  display: flex;
+  margin-left: auto;
+  justify-content: center;
+  max-width: 1303px;
+}
 .block_goods {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -251,34 +257,31 @@ a:hover {
   margin-right: auto;
   max-width: 1264px;
 }
-
 .cont1 {
-  width: 23%;
-  padding-right: 25px;
+  width: 27%;
+  padding-right: 30px;
   border-radius: 10px;
 }
-
 .feature-item:hover {
   -webkit-box-shadow: #0fffcf 0 0 14px;
   box-shadow: #0fffcf 0 0 14px;
 }
 
 .cont2 {
-  width: 23%;
-  padding-right: 25px;
+  width: 27%;
+  padding-right: 30px;
   border-radius: 10px;
 }
 
 .cont3 {
-  width: 23%;
-  padding-right: 25px;
+  width: 27%;
+  padding-right: 30px;
   border-radius: 10px;
 }
 
 .cont4 {
-  width: 23%;
+  width: 27%;
   border-radius: 10px;
-  padding-right: 25px;
 }
 
 .klondike strong {
@@ -385,10 +388,8 @@ a:hover {
 }
 
 .set-bg {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background: 255, 234, 0;
-  position: top center;
+    background-size: cover;
+    background-position: center center;
 }
 
 .spad {
@@ -507,10 +508,10 @@ a {
   border-radius: 9px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 16px;
+  margin-top: 9px;
   padding: 15px;
   color: #222222;
-  width: 215px;
+  width: 200px;
   font-family: "Roboto", sans-serif;
   justify-content: center;
   outline: none;
@@ -869,7 +870,7 @@ a {
   left: 0;
   top: 0;
   background: #000;
-  opacity: 0.75;
+  opacity: 0.77;
 }
 
 .feature-item .cata {
@@ -1081,7 +1082,6 @@ a {
     border-radius: 9px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 12px;
     padding: 15px;
     color: #222222;
     width: 60%;
@@ -1163,10 +1163,11 @@ a {
   }
 
   .cont1 {
-    width: 100%;
-    margin-left: 0;
-    padding-right: 0;
-    margin-bottom: 6%;
+    width: 100% !important;
+    margin-left: 501% !important;
+    padding-right: 15px;
+    margin-bottom: 2%;
+    padding-left: 15px;
   }
 
   .feature-item {
@@ -1176,17 +1177,19 @@ a {
   }
 
   .cont2 {
-    width: 100%;
+    width: 100% !important;
     margin-left: 0;
-    padding-right: 0;
-    margin-bottom: 6%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 2%;
   }
 
   .cont3 {
-    width: 100%;
+    width: 100% !important;
     margin-left: 0;
-    padding-right: 0;
-    margin-bottom: 6%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 2%;
   }
 
   .cont4 {
@@ -1272,13 +1275,24 @@ a {
   }
 
   .content_block {
-    display: block;
+    display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    margin: 15px;
+    margin: 0 !important;
+    padding-top: 15px
   }
-
+  .cont1-adap{
+    margin-left: 0% !important;
+  }
+  .contentblock-2 {
+    padding-right: 15px;
+    padding-left: 15px;
+    display: block;
+    margin-left: auto;
+    justify-content: center;
+    max-width: 1303px;
+}
   .section-tits h2 {
     color: #fff;
     font-size: 195%;
@@ -1475,6 +1489,16 @@ a {
   position: relative;
   margin-left: 0px;
 }
+.contentblock-2 {
+  display: flex;
+  margin-left: auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-right: auto;
+  max-width: 1303px;
+  flex-wrap: wrap;
+}
 .content_block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1508,29 +1532,34 @@ a {
   -ms-flex-pack: center;
   justify-content: center;
 }
+.rgi-content {
+  background: #0c1318;
+  border-radius: 0px 0px 15px 15px;
+  position: relative;
+  padding: 15px;
+  margin-bottom: 25px;
+}
 .cont1 {
-  width: 24%;
+  margin-left: 0px !important;
   padding-right: 15px;
   border-radius: 10px;
-  flex-basis: 36%;
+  flex-basis: 43%;
 }
 .cont2 {
-  width: 24%;
   padding-right: 15px;
   border-radius: 10px;
-  flex-basis: 36%;
+  flex-basis: 43%;
 }
 .cont3 {
-  width: 24%;
   padding-right: 15px;
   border-radius: 10px;
   margin-top: 3%;
-  flex-basis: 36%;
-  height: -webkit-fill-available;
+  flex-basis: 43%;
+
 }
 .cont4 {
-  width: 24%;
-  flex-basis: 36%;
+  flex-basis: 43%;
+  padding-right: 15px;
   border-radius: 10px;
   margin-top: 3%;
 }
