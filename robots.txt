@@ -1,6 +1,0 @@
-User-agent: Googlebot
-User-agent: *
-Host: www.
-Disallow: /index.html
-Disallow: /scripts/index.html
-Sitemap: https://it-klondike.eu.org/sitemap.xml
