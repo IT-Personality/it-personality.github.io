@@ -186,9 +186,9 @@ body {
       from(rgba(0, 0, 0, 0.7)),
       to(rgba(0, 0, 0, 0.7))
     ),
-    url(img/pexels-photo-546819.webp);
+    url(../img/pexels-photo-546819.webp);
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(img/pexels-photo-546819.webp);
+    url(../img/pexels-photo-546819.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
