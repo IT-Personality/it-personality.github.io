@@ -1,0 +1,218 @@
+body {
+    background: url(img/background_it-personalit.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+#information{
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(20px);
+    transition: 2s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 420px;
+    height: 620px;
+    border-radius: 25px;
+    border: 1px solid lightblue;
+}
+.logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #b2b2b2;
+}
+.description {
+    color: white;
+    font-size: 22px;
+    margin: 15px;
+}
+.name {
+    color: white;
+    font-size: 30px;
+    margin-top: 8px;
+}
+.cell {
+    width: 142px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    transition: 0.5s;
+    font-size: 15px;
+}
+.cell a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.soc_info a{
+    background: #5c5c5c;
+    height: 41px;
+    width: 87%;
+    align-items: center;
+    border-radius: 20px;
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    transition: 0.5s;
+}
+.soc_info a:hover{
+    background: #232323;
+    color: aqua;
+}
+.soc_info1 a{
+    background: #5c5c5c;
+    height: 41px;
+    width: 87%;
+    align-items: center;
+    border-radius: 20px;
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    transition: 0.5s;
+    margin-top: 10px;
+}
+.soc_info1 a:hover{
+    background: #232323;
+    color: rgb(255, 102, 0);
+}
+.soc_info2 a{
+    background: #5c5c5c;
+    height: 41px;
+    width: 87%;
+    align-items: center;
+    border-radius: 20px;
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    transition: 0.5s;
+    margin-top: 10px;
+}
+.soc_info2 a:hover{
+    background: #232323;
+    color: rgb(0, 157, 255);
+}
+.soc_info3 a{
+    background: #5c5c5c;
+    height: 41px;
+    width: 87%;
+    align-items: center;
+    border-radius: 20px;
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    transition: 0.5s;
+    margin-top: 10px;
+}
+.soc_info3 a:hover{
+    background: #232323;
+    color: rgb(204, 204, 204);
+}
+.soc_info4 a{
+    background: #5c5c5c;
+    height: 41px;
+    width: 87%;
+    align-items: center;
+    border-radius: 20px;
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    transition: 0.5s;
+    margin-top: 10px;
+}
+.soc_info4 a:hover{
+    background: #232323;
+    color: rgb(255, 0, 0);
+}
+.soc_btn{
+    max-width: 198px;
+}
+.logo_telegram{
+    width: 38px;
+}
+.logo_klondikeitblogger{
+    width: 33px;
+    padding-right: 5px;
+}
+.logo_donate{
+    width: 27px;
+    padding-right: 6px;
+}
+.logo_vk{
+    width: 35px;
+    padding-right: 6px;
+    margin-left: -7%;
+}
+.logo_git{
+    width: 32px;
+    padding-right: 6px;
+}
+@media screen and (max-width: 600px) {
+body {
+    background: url(img/background_it-personalit.gif);
+    background-repeat: no-repeat;
+    background-size: 402%;
+}
+#information{
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(20px);
+    transition: 2s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 368px;
+    height: 655px;
+    border-radius: 0px;
+    border: 0px solid lightblue;
+}
+.about-stats .progress-bars .progress-bar {
+    display: flex
+;
+    flex-direction: column;
+    border: 1.6px solid #2a2e35;
+    width: 130px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.about-stats .progress-bars {
+    display: flex
+;
+    grid-gap: 11px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+}
